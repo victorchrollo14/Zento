@@ -2,8 +2,7 @@ import * as React from "react";
 function MobHeroImage() {
   return (
     <svg
-      width={280}
-      height={581}
+      className="w-[80vw] h-auto max-w-sm"
       viewBox="0 0 280 581"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div className="app min-h-screen">
-        <section className="hero bg-lBlue h-[850px]">
+        <section className="hero bg-lBlue h-[900px]">
           <Header />
           <div className="wrapper p-4 flex justify-center items-center flex-col">
             <HeroContent />
