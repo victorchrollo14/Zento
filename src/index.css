@@ -18,3 +18,9 @@ body {
 .font-mont {
   font-family: "montseratt", sans-serif;
 }
+
+.hero-section {
+  background: linear-gradient(#38b5ff 80%, #ffffff 20%);
+  /* background-size: 100% 70%; */
+  background-repeat: no-repeat;
+}

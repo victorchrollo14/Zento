@@ -2,12 +2,14 @@ import React from "react";
 import MobHeroImage from "../assets/svgs/Mobile";
 import { Header } from "../components/Header";
 import { HeroContent } from "../components/Hero";
+import { Features } from "../components/Features";
+import { MoreOffers } from "../components/MoreOffers";
 
 const Home = () => {
   return (
     <>
       <div className="app min-h-screen">
-        <section className="hero bg-lBlue h-[900px]">
+        <section className="hero-section bg-lBlue ">
           <Header />
           <div className="wrapper p-4 flex justify-center items-center flex-col">
             <HeroContent />
@@ -31,6 +33,8 @@ const Home = () => {
             <MobHeroImage />
           </div>
         </section>
+        <Features />
+        <MoreOffers />
       </div>
     </>
   );
