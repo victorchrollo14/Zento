@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { HeroContent } from "../components/Hero";
 import { Features } from "../components/Features";
 import { MoreOffers } from "../components/MoreOffers";
+import { JoinCommunity } from "../components/comm";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
         </section>
         <Features />
         <MoreOffers />
+        <JoinCommunity />
       </div>
     </>
   );
