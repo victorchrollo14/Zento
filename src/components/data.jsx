@@ -38,7 +38,7 @@ export const featuresData = [
     content:
       "Achieve your financial goals with our Goal-Based Saving feature. Save towards your dreams & wants, while we invest your money in gold or mutual funds. Secure your future, one gullak at a time.",
     bgColor: "bg-drkYellow",
-    textColor: "text-drkPurple",
+    textColor: "text-drkstBlue",
     image: <SavingsImage />,
   },
 ];

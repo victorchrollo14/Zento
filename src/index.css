@@ -25,6 +25,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.cap-header {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 50px;
+}
+
 .normal-header-clamp {
   font-size: clamp(1.5rem, 4vw, 3rem);
   line-height: clamp();

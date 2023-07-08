@@ -6,7 +6,7 @@ export const Features = () => {
   return (
     <section className="features-section my-16 mx-4">
       <header>
-        <h1 className="uppercase font-mont font-bold text-[28px] text-center ">
+        <h1 className="uppercase font-mont font-bold text-[28px] text-center cap-header">
           our features
         </h1>
         <h3 className="font-mont text-center text-base ">
@@ -30,16 +30,24 @@ export const Features = () => {
 };
 
 const ListItems = () => {
+  let id = 0;
   let items = featuresData.map(
     ({ title, subtitle, content, bgColor, textColor, image }) => {
+      id++;
+      let order = "flex-row";
+      if (id % 2 == 0) {
+        order = "flex-row-reverse";
+      }
       return (
         <li
           key={crypto.randomUUID()}
           className={` my-5 ${bgColor} ${textColor}  rounded-xl w-full flex justify-center items-center md:h-[500px] xl:h-[650px]`}
         >
-          <div className="list-inside-wrappe py-[10%] md:py-10 sm:w-4/5 flex flex-col items-center md:flex-row  justify-center md:items-start lg:mx-16 ">
-            <div className="feat-content  w-[90%] max-w-md md:w-1/2 md:mt-8 lg:mt-20">
-              <h1 className="uppercase font-mont font-bold text-[28px] ">
+          <div
+            className={`list-inside-wrapper py-[10%] md:py-10 sm:w-4/5 flex flex-col items-center md:${order}  justify-between  lg:mx-16 xl:max-w-[1000px]`}
+          >
+            <div className="feat-content  w-[90%] max-w-md md:w-1/2">
+              <h1 className="uppercase font-mont font-bold text-[28px] cap-header">
                 {title}
               </h1>
               <h3 className="font-mont font-semibold text-xl mb-2">

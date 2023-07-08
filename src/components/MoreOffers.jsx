@@ -4,7 +4,7 @@ import { moreOffersData } from "./data";
 export const MoreOffers = () => {
   return (
     <section className="more-offers-section ">
-      <h1 className="uppercase font-mont font-bold text-[28px] text-center">
+      <h1 className="uppercase font-mont font-bold text-[28px] text-center cap-header">
         We Have More
         <br /> Offers for you
       </h1>
