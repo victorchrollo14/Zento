@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <div className="app min-h-screen">
-        <section className="hero-section mix-bg  lg:h-auto">
+        <section className="hero-section mix-bg  h-screen ">
           <Header />
           <div className="wrapper p-4 flex justify-center items-center flex-col md:w-screen">
             <div className="md:flex md:flex-col lg:flex-row md:justify-between lg:mx-12">

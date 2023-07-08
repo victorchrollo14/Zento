@@ -1,10 +1,12 @@
 import React from "react";
+import { Intro } from "../components/AboutComp/Intro";
+import { Mission } from "../components/AboutComp/Mission";
 
 const About = () => {
   return (
     <div className="app min-h-screen">
-      {" "}
-      <h1 className="font-mont cap-header">About us Page</h1>
+      <Intro />
+      <Mission />
     </div>
   );
 };
