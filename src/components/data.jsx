@@ -2,7 +2,11 @@ import { MoreOffers } from "./MoreOffers";
 import { BillImage } from "../assets/svgs/bill";
 import { InsightsImage } from "../assets/svgs/insights";
 import { SavingsImage } from "../assets/svgs/savings";
-import {ScannerImage} from "../assets/svgs/scanner"
+import { ScannerImage } from "../assets/svgs/scanner";
+import { BankingImage } from "../assets/svgs/Banking";
+import ExtraSavings from "../assets/Images/savings.png";
+import { HiddenImage } from "../assets/svgs/Charges";
+import DebitImage from "../assets/Images/Debit.svg";
 
 export const featuresData = [
   {
@@ -48,18 +52,22 @@ export const moreOffersData = [
     title: "100% Digital Banking.",
     subtitle:
       "Banking Whenever,  Wherever (Humari koi offline shakha nhi hai).",
+    image: <BankingImage />,
   },
   {
     title: "Zero Balance Savings account",
     subtitle:
       "Goodbye to minimum balance and say hello to our #ZentoZeroBalance  account.",
+    image: ExtraSavings,
   },
   {
     title: "No hidden charges",
     subtitle: "Bank hidden charges - We don't do that here . 😌",
+    image: <HiddenImage />,
   },
   {
     title: "Visa Debit Card.",
     subtitle: "Get your customized debit card, Card humara design tumhara.",
+    image: DebitImage,
   },
 ];
