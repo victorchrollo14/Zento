@@ -5,6 +5,7 @@ import { HeroContent } from "../components/Hero";
 import { Features } from "../components/Features";
 import { MoreOffers } from "../components/MoreOffers";
 import { JoinCommunity } from "../components/comm";
+import { Footer } from "../components/Footer";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
         <Features />
         <MoreOffers />
         <JoinCommunity />
+        <Footer />
       </div>
     </>
   );
