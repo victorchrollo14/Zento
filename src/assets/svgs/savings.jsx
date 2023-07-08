@@ -1,9 +1,9 @@
-import * as React from "react"
+import * as React from "react";
 
-function SavingsImage() {
+export function SavingsImage() {
   return (
     <svg
-     className="w-full h-auto"
+      className="w-full h-auto py-5"
       viewBox="0 0 551 367"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1361,7 +1361,5 @@ function SavingsImage() {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
-
-export default SavingsImage

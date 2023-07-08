@@ -1,6 +1,6 @@
-import * as React from "react"
+import * as React from "react";
 
-function InsightsImage() {
+export function InsightsImage() {
   return (
     <svg
       className="w-full h-auto"
@@ -438,7 +438,5 @@ function InsightsImage() {
         fill="#00F"
       />
     </svg>
-  )
+  );
 }
-
-export default InsightsImage

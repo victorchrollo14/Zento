@@ -1,4 +1,8 @@
 import { MoreOffers } from "./MoreOffers";
+import { BillImage } from "../assets/svgs/bill";
+import { InsightsImage } from "../assets/svgs/insights";
+import { SavingsImage } from "../assets/svgs/savings";
+import {ScannerImage} from "../assets/svgs/scanner"
 
 export const featuresData = [
   {
@@ -8,6 +12,7 @@ export const featuresData = [
       "Seamless payments with Scan & Pay through UPI. Scan QR codes, pay instantly, or send money to contacts. Enjoy secure transactions in seconds, anytime, anywhere!",
     bgColor: "bg-drkBlue",
     textColor: "text-white",
+    image: <ScannerImage />,
   },
   {
     title: "Split your Bills.",
@@ -16,6 +21,7 @@ export const featuresData = [
       "Easily split expenses with friends, roommates, or colleagues. Allocate costs, specify shares, and settle payments hassle-free, ensuring fair and transparent bill splits.",
     bgColor: "bg-light-green",
     textColor: "text-drkPurple",
+    image: <BillImage />,
   },
   {
     title: "Get  Money Insights.",
@@ -24,6 +30,7 @@ export const featuresData = [
       "Track expenses, gain valuable insights, analyze spending patterns, and make informed financial decisions with our Money Insight feature. Take control of your finances today!",
     bgColor: "bg-drkPurple",
     textColor: "text-drkYellow",
+    image: <InsightsImage />,
   },
   {
     title: "Goal Based Savings.",
@@ -32,6 +39,7 @@ export const featuresData = [
       "Achieve your financial goals with our Goal-Based Saving feature. Save towards your dreams & wants, while we invest your money in gold or mutual funds. Secure your future, one gullak at a time.",
     bgColor: "bg-drkYellow",
     textColor: "text-drkPurple",
+    image: <SavingsImage />,
   },
 ];
 

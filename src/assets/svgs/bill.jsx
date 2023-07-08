@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function BillImage() {
+export const BillImage = () => {
   return (
     <svg
       className="w-full h-auto"
@@ -473,6 +473,4 @@ function BillImage() {
       />
     </svg>
   );
-}
-
-export default BillImage;
+};

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function ScannerImage() {
+export function ScannerImage() {
   return (
     <svg
       className="w-full h-auto"
@@ -1412,5 +1412,3 @@ function ScannerImage() {
     </svg>
   );
 }
-
-export default ScannerImage;
