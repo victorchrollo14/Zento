@@ -24,3 +24,8 @@ body {
   /* background-size: 100% 70%; */
   background-repeat: no-repeat;
 }
+
+.normal-header-clamp {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: clamp();
+}

@@ -6,12 +6,12 @@ export const Form = () => {
       <input
         type="email"
         placeholder="enter your email"
-        className="placeholder:text-center text-center text-black font-mont w-full  rounded-full outline-lYellow"
+        className="placeholder:text-center text-center text-black font-mont w-full sm:h-14 sm:text-lg rounded-full outline-lYellow"
       />{" "}
       <br />
       <button
         type="submit"
-        className="text-center font-mont text-black bg-lYellow w-full  h-10 rounded-full mt-2 hover:bg-drkYellow"
+        className="text-center font-mont text-black bg-lYellow w-full  h-10 rounded-full mt-2 sm:h-14 sm:text-lg hover:bg-drkYellow"
       >
         Subscribe
       </button>

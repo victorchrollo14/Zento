@@ -16,11 +16,13 @@ export const Features = () => {
       </header>
       <ul className="features">
         <ListItems />
-        <li className="cta flex gap-3 items-center justify-center flex-col bg-drkPurple text-white rounded-xl py-12 px-6">
-          <h1 className="uppercase font-mont font-bold text-[24px]  text-center max-w-[370px]">
-            Join The WaitList to get updates On The Product{" "}
-          </h1>
-          <Form />
+        <li className="cta flex justify-center  bg-drkPurple text-white rounded-xl py-12  lg:rounded-full md:py-16 lg:py-24">
+          <div className="w-3/4 flex gap-3 items-center justify-center flex-col">
+            <h1 className="capitalize font-mont font-bold normal-header-clamp  text-center md:max-w-lg lg:max-w-4xl leading-tight">
+              Join The WaitList to get updates On The Product{" "}
+            </h1>
+            <Form />
+          </div>
         </li>
       </ul>
     </section>
