@@ -4,7 +4,7 @@ import { Form } from "./form";
 
 export const Features = () => {
   return (
-    <section className="features-section my-16 mx-4">
+    <section className="features-section my-16 mx-4  md:my-12 lg:mx-12">
       <header>
         <h1 className="uppercase font-mont font-bold text-[28px] text-center cap-header">
           our features
@@ -16,7 +16,7 @@ export const Features = () => {
       </header>
       <ul className="features ">
         <ListItems />
-        <li className="cta flex justify-center   bg-drkPurple text-white rounded-xl py-12  lg:rounded-full md:py-16 lg:py-24">
+        <li className="cta flex justify-center  bg-drkPurple text-white rounded-xl py-12  lg:rounded-full md:py-16 lg:py-24">
           <div className="w-3/4 flex gap-3 items-center justify-center flex-col">
             <h1 className="capitalize font-mont font-bold normal-header-clamp  text-center md:max-w-lg lg:max-w-4xl leading-tight">
               Join The WaitList to get updates On The Product{" "}
@@ -34,18 +34,17 @@ const ListItems = () => {
   let items = featuresData.map(
     ({ title, subtitle, content, bgColor, textColor, image }) => {
       id++;
-      let order = "flex-row";
+      let classList = `list-inside-wrapper py-[10%] md:py-10 sm:w-4/5 flex flex-col gap-7 items-center md:flex-row  justify-between  lg:mx-16 xl:max-w-[1000px]`;
       if (id % 2 == 0) {
-        order = "flex-row-reverse";
+        classList = `list-inside-wrapper py-[10%] md:py-10 sm:w-4/5 flex flex-col gap-7 items-center md:flex-row-reverse  justify-between  lg:mx-16 xl:max-w-[1000px]`;
       }
+
       return (
         <li
           key={crypto.randomUUID()}
           className={` my-5 ${bgColor} ${textColor}  rounded-xl w-full flex justify-center items-center md:h-[500px] xl:h-[650px]`}
         >
-          <div
-            className={`list-inside-wrapper py-[10%] md:py-10 sm:w-4/5 flex flex-col items-center md:${order}  justify-between  lg:mx-16 xl:max-w-[1000px]`}
-          >
+          <div className={classList}>
             <div className="feat-content  w-[90%] max-w-md md:w-1/2">
               <h1 className="uppercase font-mont font-bold text-[28px] cap-header">
                 {title}
@@ -55,7 +54,9 @@ const ListItems = () => {
               </h3>
               <p className="font-mont text-base">{content}</p>
             </div>
-            <div className="image w-[90%] max-w-md md:w-1/2">{image}</div>
+            <div className="image w-[90%]  max-w-lg md:w-1/2 xl:w-[700px]">
+              {image}
+            </div>
           </div>
         </li>
       );

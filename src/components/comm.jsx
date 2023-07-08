@@ -6,7 +6,7 @@ export const JoinCommunity = () => {
   return (
     <section className="join-comm-section flex justify-center items-center mt-8 mb-2 md:m-12">
       <div className="inner-content m-4">
-        <h1 className="font-mont font-bold text-[28px] uppercase text-center leading-[30px]">
+        <h1 className="font-mont font-bold text-[28px] uppercase text-center leading-[30px] cap-header">
           Join our <br />
           community
         </h1>

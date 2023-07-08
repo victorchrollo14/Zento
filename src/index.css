@@ -19,15 +19,21 @@ body {
   font-family: "montseratt", sans-serif;
 }
 
-.hero-section {
+.mix-bg {
   background: linear-gradient(#38b5ff 80%, #ffffff 20%);
   /* background-size: 100% 70%; */
   background-repeat: no-repeat;
 }
 
+@media (min-width: 768px) {
+  .mix-bg {
+    background: #38b5ff;
+  }
+}
+
 .cap-header {
   font-size: clamp(1.8rem, 4vw, 3rem);
-  line-height: 50px;
+  line-height: clamp(2rem, 2vw + 1rem, 3rem);
 }
 
 .normal-header-clamp {

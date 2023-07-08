@@ -7,7 +7,7 @@ export const Header = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <Navbar fluid rounded className="sticky top-4 bg-black mx-4  rounded-[25px] py-4 sm:py-5 ">
+    <Navbar fluid rounded className="sticky top-4 bg-black mx-4  rounded-[25px] py-4 sm:py-5 lg:mx-12 ">
       <Navbar.Brand href="https://flowbite-react.com">
         <img
           src={logo}
