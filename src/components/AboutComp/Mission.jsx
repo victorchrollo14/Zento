@@ -9,7 +9,7 @@ export const Mission = () => {
       >
         <div className="list-inside-wrapper py-[10%] md:w-[80%] md:py-10 flex flex-col gap-7 items-center md:flex-row  justify-between max-w-[1200px]">
           <div className="feat-content  w-[90%] max-w-md md:w-1/2">
-            <h1 className="uppercase font-mont font-bold text-[28px] cap-header">
+            <h1 className="uppercase font-mont font-bold text-[28px] cap-header mb-2">
               On a Mission
             </h1>
             <p className="font-mont text-base">
