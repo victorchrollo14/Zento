@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { Navbar } from "flowbite-react";
-import logo from "../assets/Images/logo.png";
-import MobileNav from "./MobileNav";
+import logo from "../../assets/Images/logo.png";
+import MobileNav from "../MobileNav";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <Navbar fluid rounded className="sticky top-4 bg-black mx-4  rounded-[25px] py-4 sm:py-5 lg:mx-12 ">
+    <Navbar
+      fluid
+      rounded
+      className="sticky top-4 bg-black mx-4  rounded-[25px] py-4 sm:py-5 lg:mx-12 "
+    >
       <Navbar.Brand href="https://flowbite-react.com">
         <img
           src={logo}
@@ -17,7 +22,7 @@ export const Header = () => {
       </Navbar.Brand>
       {showNav ? <MobileNav setShowNav={setShowNav} /> : null}
       <Menu setShowNav={setShowNav} />
-      <NavLinks />
+      <NavLinks setShowNav={setShowNav} />
     </Navbar>
   );
 };
@@ -43,21 +48,29 @@ const Menu = ({ setShowNav }) => {
   );
 };
 
-const NavLinks = () => {
+const NavLinks = ({ setShowNav }) => {
   return (
     <nav className="navlinks gap-3 text-white mx-4 hidden sm:flex sm:mr-8 sm:gap-7">
-      <a href="/" className="font-mont text-base">
+      <Link to="/" className="font-mont text-base">
         Home
-      </a>
-      <a href="/about" className="font-mont text-base">
+      </Link>
+
+      <Link to="/About" className="font-mont text-base">
         About
-      </a>
-      <a href="#Contact" className="font-mont text-base">
+      </Link>
+      <Link
+        to="/#Contact"
+        className="font-mont text-base"
+        onClick={() => {
+          console.log("clicked");
+          setShowNav(false);
+        }}
+      >
         Contact
-      </a>
-      <a href="/community" className="font-mont text-base">
+      </Link>
+      <Link to="/community" className="font-mont text-base">
         Community
-      </a>
+      </Link>
     </nav>
   );
 };

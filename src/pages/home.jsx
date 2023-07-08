@@ -1,11 +1,11 @@
 import React from "react";
 import MobHeroImage from "../assets/svgs/Mobile";
-import { Header } from "../components/Header";
+import { Header } from "../components/common/Header";
 import { HeroContent } from "../components/Hero";
 import { Features } from "../components/Features";
 import { MoreOffers } from "../components/MoreOffers";
 import { JoinCommunity } from "../components/comm";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/common/Footer";
 import HeroImage from "../assets/Images/HeroImage.svg";
 
 const Home = () => {

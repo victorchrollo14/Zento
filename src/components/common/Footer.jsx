@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/Images/logo.png";
-import { Twitter, LinkedIn, Facebook, Instagram } from "../assets/svgs/socials";
+import logo from "../../assets/Images/logo.png";
+import { Twitter, LinkedIn, Facebook, Instagram } from "../../assets/svgs/socials";
 
 export const Footer = () => {
   return (
@@ -60,7 +60,7 @@ export const Footer = () => {
           </div>
 
           {/* Contact Header */}
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-20">
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-20" id="Contact">
             <h3 className="text-2xl font-bold mb-2 font-mont">Contact</h3>
             <div className="font-mont text-base font-medium">
               <a href="mailto:" className="flex gap-2 ">
