@@ -1,6 +1,13 @@
 import React from "react";
 import logo from "../../assets/Images/logo.png";
-import { Twitter, LinkedIn, Facebook, Instagram } from "../../assets/svgs/socials";
+import {
+  Twitter,
+  LinkedIn,
+  Facebook,
+  Instagram,
+} from "../../assets/svgs/socials";
+import playStore from "../../assets/Images/playstore.svg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -9,12 +16,23 @@ export const Footer = () => {
         <div className="container mx-auto flex flex-wrap justify-between gap-10 ">
           {/* Logo and Description */}
           <div className="w-full sm:w-1/2 md:w-1/3   md:mb-0 md:min-w-[320px]">
-            <img src={logo} alt="zento logo image" className="w-32 h-auto sm:w-36 md:w-48" />
+            <img
+              src={logo}
+              alt="zento logo image"
+              className="w-32 h-auto sm:w-36 md:w-48"
+            />
             <p className="mt-2 w-full font-mont text-left max-w-sm">
               The ultimate neobanking app for Gen Z. Experience seamless banking
               in one app with a wide range of money-related features. Simplify
               your financial journey with ZENTO today!
             </p>
+            <Link to={"/meme"}>
+              <img
+                src={playStore}
+                alt="playstore Image"
+                className=" mt-5 md:mt-10"
+              />
+            </Link>
           </div>
 
           {/* Pages Header */}
@@ -98,7 +116,9 @@ export const Footer = () => {
       </footer>
       <div className="footer-bottom w-screen bg-gray-900">
         <hr />
-        <p className="w-full text-center text-gray-400 text-sm p-4 font-mont ">@Zento. All rights reserved</p>
+        <p className="w-full text-center text-gray-400 text-sm p-4 font-mont ">
+          @Zento. All rights reserved
+        </p>
       </div>
     </>
   );

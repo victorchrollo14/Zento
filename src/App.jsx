@@ -10,6 +10,7 @@ import {
 import About from "./pages/about";
 import Home from "./pages/home";
 import Community from "./pages/community";
+import Meme from "./pages/meme";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="community" element={<Community />} />
+      <Route path="meme" element={<Meme />} />
     </Route>
   )
 );
