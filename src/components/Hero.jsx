@@ -3,7 +3,7 @@ import React from 'react'
 export const HeroContent = () => {
     return (
       <div className="hero-content  mt-8 flex flex-col md:justify-center md:items-center lg:items-start">
-        <h1 className="font-black font-mont text-black text-6xl  text-left hero-header md:text-center  lg:text-left">
+        <h1 className="font-black font-mont text-black text-6xl  text-left hero-header md:text-center lg:leading-none lg:text-left">
           Banking Reimagined... <br />
           For the <span className="text-light-green">Gen-Z </span>
           <br />

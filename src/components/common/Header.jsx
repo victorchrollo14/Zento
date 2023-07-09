@@ -1,21 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "flowbite-react";
 import logo from "../../assets/Images/logo.png";
 import MobileNav from "../MobileNav";
 import { Link } from "react-router-dom";
 import { Link as Link2 } from "react-scroll";
+import { debounce } from "lodash";
 
 export const Header = () => {
   const [showNav, setShowNav] = useState(false);
+  const [isFixed, setIsFixed] = useState(true);
+  const [prevScroll, setPrevScroll] = useState(0);
+
+  const changeHeader = () => {
+    let currentPos = window.scrollY;
+    let show = prevScroll > currentPos;
+    setPrevScroll(currentPos);
+    setIsFixed(show);
+  };
+
+  const debouncedScroll = debounce(changeHeader, 10);
+
+  useEffect(() => {
+    window.addEventListener("scroll", debouncedScroll);
+    return () => {
+      window.removeEventListener("scroll", debouncedScroll);
+      debouncedScroll.cancel();
+    };
+  });
 
   return (
-    <div className="header-container fixed top-0 z-10 w-full">
+    <div
+      className={`header-container header ${
+        isFixed ? "fixed top-5 header-visible" : "header-hidden"
+      } z-10 w-full flex justify-center `}
+    >
       <Navbar
         fluid
         rounded
-        className="p-0 bg-black  rounded-[25px] py-4 sm:py-5  "
+        className="p-0 bg-black w-[95vw] rounded-[25px] py-4 sm:py-6  "
       >
-        <Navbar.Brand href="https://flowbite-react.com">
+        <Navbar.Brand href="https://flowbite-react.com" className="pl-5">
           <img
             src={logo}
             alt="Zento Logo"
@@ -32,7 +56,7 @@ export const Header = () => {
 
 const Menu = ({ setShowNav }) => {
   return (
-    <div className="menu mx-3 sm:hidden" onClick={() => setShowNav(true)}>
+    <div className="menu mx-3 sm:hidden pr-3" onClick={() => setShowNav(true)}>
       <svg
         width={30}
         height={30}
@@ -51,7 +75,7 @@ const Menu = ({ setShowNav }) => {
   );
 };
 
-const NavLinks = ({ setShowNav }) => {
+const NavLinks = () => {
   return (
     <nav className="navlinks gap-3 text-white mx-4 hidden sm:flex sm:mr-8 sm:gap-7">
       <Link to="/" className="font-mont text-base cursor-pointer">

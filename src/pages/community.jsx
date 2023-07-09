@@ -7,7 +7,7 @@ import { Footer } from "../components/common/Footer";
 const Community = () => {
   return (
     <>
-      <div className="app min-h-screen w-screen overflow-hidden relative">
+      <div className="app min-h-screen w-screen overflow-hidden bg-drkBlue">
         <ZeroOne />
         <FinanceTalk />
         <JoinCommunity />

@@ -6,7 +6,7 @@ import { Footer } from "../components/common/Footer";
 
 const About = () => {
   return (
-    <div className="app min-h-screen">
+    <div className="app min-h-screen bg-lYellow overflow-hidden">
       <Intro />
       <Mission />
       <TeamSection />

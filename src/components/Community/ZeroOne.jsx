@@ -1,19 +1,20 @@
 import React from "react";
 import { Header } from "../common/Header";
 import { NewsLetterImage } from "../../assets/svgs/ZeroOneImage";
+import ZeroOneHeader from "../../assets/Images/zeroOne.svg"
 
 export const ZeroOne = () => {
   return (
     <>
       <Header />
       <section className="zero-one bg-drkBlue lg:h-screen ">
-        <div className="Zero-one-wrap flex flex-col items-center lg:items-start lg:justify-between mt-5 py-10 lg:flex-row-reverse lg:mx-16">
+        <div className="Zero-one-wrap flex flex-col items-center lg:items-start lg:justify-between mt-16 py-10 lg:flex-row-reverse lg:mx-16">
           <div className="image-section md:w-3/4 lg:w-1/2">
             <NewsLetterImage />
           </div>
 
           <div className="text-content lg:1/2 flex flex-col items-center lg:translate-y-20 xl:translate-y-32 px-4 lg:items-start">
-            <ZeroOneHeading />
+            <img src={ZeroOneHeader} alt="zero one header" />
             <h3 className="font-mont text-base text-white w-[90%] max-w-md md:text-lg md:max-w-lg text-center lg:text-left mt-3 ">
               A Finance newsletter from <span>ZENTO</span>. Subscribe to our
               newsletter and follow us LinkedIn to quality content on Finance{" "}

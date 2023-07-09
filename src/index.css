@@ -48,7 +48,7 @@ body {
 .hero-header {
   font-size: clamp(1.8rem, 5vw, 3.5rem);
   font-weight: bolder;
-  line-height: 60px;
+  line-height: clamp(2rem, 2.5vw + 1.2rem, 4rem);
 }
 
 .normal-header-clamp {
@@ -56,7 +56,14 @@ body {
   line-height: clamp();
 }
 
-#Contact {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+.header {
+  transition: transform 0.3s ease-in;
+}
+
+.header-visible {
+  transform: translateY(0);
+}
+
+.header-hidden {
+  transform: translateY(-100%);
 }
