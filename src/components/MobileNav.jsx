@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const MobileNav = ({ setShowNav }) => {
   return (
@@ -37,12 +38,20 @@ const MobileNav = ({ setShowNav }) => {
           </a>
         </li>
         <li className="border-b border-b-drkPurple py-5 pl-4 hover:bg-white">
-          <a
-            href="#Contact"
+          <Link
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={() => {
+              console.log("clicked");
+              setShowNav(false);
+            }}
             className="block text-drkPurple font-mont text-3xl font-semibold tracking-[-1.2px] "
           >
             Contact
-          </a>
+          </Link>
         </li>
         <li className="border-b border-b-drkPurple py-5 pl-4 hover:bg-white">
           <a

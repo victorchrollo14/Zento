@@ -21,7 +21,7 @@ const TeamSection = () => {
     },
     {
       name: "Lucknow",
-      position: "Co-Founder and CEO",
+      position: "CMO",
       image: person3,
       instagram: "https://www.instagram.com/blackwidow",
       linkedIn: "https://www.linkedin.com/in/blackwidow",
@@ -38,7 +38,7 @@ const TeamSection = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="team-card mx-4 my-4 flex flex-col items-left md:w-1/3 "
+            className="team-card mx-4 my-4 flex flex-col items-left md:w-1/4 "
           >
             <img
               src={member.image}
@@ -46,7 +46,7 @@ const TeamSection = () => {
               className="rounded-lg w-full h-auto"
             />
             <h3 className="mt-4 font-mont font-bold text-2xl">{member.name}</h3>
-            <p className="text-base font-mont text-black">{member.position}</p>
+            <p className="text-base font-mont text-black font-semibold">{member.position}</p>
             <div className="flex -translate-x-2">
               <a
                 href={member.instagram}

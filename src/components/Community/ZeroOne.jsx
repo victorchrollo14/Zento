@@ -4,39 +4,40 @@ import { NewsLetterImage } from "../../assets/svgs/ZeroOneImage";
 
 export const ZeroOne = () => {
   return (
-    <section className="zero-one bg-drkBlue lg:h-screen">
+    <>
       <Header />
-      <div className="Zero-one-wrap flex flex-col items-center lg:items-start lg:justify-between mt-5 py-10 lg:flex-row-reverse lg:mx-16">
-        <div className="image-section md:w-3/4 lg:w-1/2">
-          <NewsLetterImage />
-        </div>
+      <section className="zero-one bg-drkBlue lg:h-screen ">
+        <div className="Zero-one-wrap flex flex-col items-center lg:items-start lg:justify-between mt-5 py-10 lg:flex-row-reverse lg:mx-16">
+          <div className="image-section md:w-3/4 lg:w-1/2">
+            <NewsLetterImage />
+          </div>
 
-        <div className="text-content lg:1/2 flex flex-col items-center lg:translate-y-20 xl:translate-y-32 px-4 lg:items-start">
-          <ZeroOneHeading />
-          <h3 className="font-mont text-base text-white w-[90%] max-w-md md:text-lg md:max-w-lg text-center lg:text-left mt-3 ">
-            A Finance newsletter from <span>ZENTO</span>. Subscribe to our
-            newsletter and follow us LinkedIn to quality content
-            on Finance{" "}
-          </h3>
-          <form
-            action=""
-            className="mt-5 py-1 px-4 w-full max-w-[458px] flex flex-col lg:p-0"
-          >
-            <input
-              type="email"
-              placeholder="enter your email"
-              className="placeholder:text-center text-center text-black md:h-12 font-mont w-full rounded-full outline-lYellow"
-            />{" "}
-            <button
-              type="submit"
-              className="text-center font-mont bg-lYellow w-full h-10 md:h-12 rounded-full mt-2 hover:bg-drkYellow"
+          <div className="text-content lg:1/2 flex flex-col items-center lg:translate-y-20 xl:translate-y-32 px-4 lg:items-start">
+            <ZeroOneHeading />
+            <h3 className="font-mont text-base text-white w-[90%] max-w-md md:text-lg md:max-w-lg text-center lg:text-left mt-3 ">
+              A Finance newsletter from <span>ZENTO</span>. Subscribe to our
+              newsletter and follow us LinkedIn to quality content on Finance{" "}
+            </h3>
+            <form
+              action=""
+              className="mt-5 py-1 px-4 w-full max-w-[458px] flex flex-col lg:p-0"
             >
-              Subscribe
-            </button>
-          </form>
+              <input
+                type="email"
+                placeholder="enter your email"
+                className="placeholder:text-center text-center text-black md:h-12 font-mont w-full rounded-full outline-lYellow"
+              />{" "}
+              <button
+                type="submit"
+                className="text-center font-mont bg-lYellow w-full h-10 md:h-12 rounded-full mt-2 hover:bg-drkYellow"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

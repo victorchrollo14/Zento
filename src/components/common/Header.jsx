@@ -3,27 +3,30 @@ import { Navbar } from "flowbite-react";
 import logo from "../../assets/Images/logo.png";
 import MobileNav from "../MobileNav";
 import { Link } from "react-router-dom";
+import { Link as Link2 } from "react-scroll";
 
 export const Header = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <Navbar
-      fluid
-      rounded
-      className="sticky top-4 bg-black mx-4  rounded-[25px] py-4 sm:py-5 lg:mx-12 "
-    >
-      <Navbar.Brand href="https://flowbite-react.com">
-        <img
-          src={logo}
-          alt="Zento Logo"
-          className="w-32 h-auto md:w-40  sm:ml-8"
-        />
-      </Navbar.Brand>
-      {showNav ? <MobileNav setShowNav={setShowNav} /> : null}
-      <Menu setShowNav={setShowNav} />
-      <NavLinks setShowNav={setShowNav} />
-    </Navbar>
+    <div className="header-container fixed top-0 z-10 w-full">
+      <Navbar
+        fluid
+        rounded
+        className="p-0 bg-black  rounded-[25px] py-4 sm:py-5  "
+      >
+        <Navbar.Brand href="https://flowbite-react.com">
+          <img
+            src={logo}
+            alt="Zento Logo"
+            className="w-32 h-auto md:w-40  sm:ml-8"
+          />
+        </Navbar.Brand>
+        {showNav ? <MobileNav setShowNav={setShowNav} /> : null}
+        <Menu setShowNav={setShowNav} />
+        <NavLinks setShowNav={setShowNav} />
+      </Navbar>
+    </div>
   );
 };
 
@@ -51,26 +54,27 @@ const Menu = ({ setShowNav }) => {
 const NavLinks = ({ setShowNav }) => {
   return (
     <nav className="navlinks gap-3 text-white mx-4 hidden sm:flex sm:mr-8 sm:gap-7">
-      <Link to="/" className="font-mont text-base">
+      <Link to="/" className="font-mont text-base cursor-pointer">
         Home
       </Link>
 
-      <Link to="/About" className="font-mont text-base">
+      <Link to="/About" className="font-mont text-base cursor-pointer">
         About
       </Link>
-      <Link
-        to="#Contact"
-        className="font-mont text-base"
-        onClick={() => {
-          console.log("clicked");
-          setShowNav(false);
-        }}
-      >
-        Contact
-      </Link>
-      <Link to="/community" className="font-mont text-base">
+
+      <Link to="/community" className="font-mont text-base cursor-pointer">
         Community
       </Link>
+      <Link2
+        to="Contact"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={600}
+        className="font-mont text-base cursor-pointer"
+      >
+        Contact
+      </Link2>
     </nav>
   );
 };

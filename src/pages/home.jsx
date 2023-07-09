@@ -30,7 +30,7 @@ const Home = () => {
                   />{" "}
                   <button
                     type="submit"
-                    className="text-center font-mont bg-lYellow w-full h-10 md:h-12 rounded-full mt-2 hover:bg-drkYellow"
+                    className="text-center font-semibold font-mont bg-lYellow w-full h-10 md:h-12 rounded-full mt-2 hover:bg-drkYellow"
                   >
                     Subscribe
                   </button>

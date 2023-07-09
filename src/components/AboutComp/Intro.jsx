@@ -12,12 +12,12 @@ export const Intro = () => {
             <img src={AboutImage} alt="About us image" />
           </div>
           <div className="text-content flex flex-col items-center text-left mx-4 md:text-center max-w-xl lg:max-w-3xl ">
-            <h1 className="cap-header   font-mont text-black  font-bold mb-5">
-              A New Age NeoBank for Genz built by Genz in India
+            <h1 className="cap-header  font-mont text-black  font-bold mb-5 ">
+              A New Age NeoBank for Genz built by Genz in INDIA❤️
             </h1>
-            <p className="text-base font-mont max-w-2xl">
+            <p className="text-base font-bold font-mont max-w-2xl">
               We help you seamlessly manage your finances, make payments, track
-              and provide personalized features{" "}
+              and provide personalized features{" "} <br />
               <span className="text-drkPurple">
                 We Don’t make you wait in lines or during lunch breaks, we are
                 there for you all the time 🤝

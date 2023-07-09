@@ -46,7 +46,7 @@ const ListItems = () => {
         >
           <div className={classList}>
             <div className="feat-content  w-[90%] max-w-md md:w-1/2">
-              <h1 className="uppercase font-mont font-bold text-[28px] cap-header">
+              <h1 className="uppercase font-mont font-bold text-[28px] cap-header mb-3">
                 {title}
               </h1>
               <h3 className="font-mont font-semibold text-xl mb-2">

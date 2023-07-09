@@ -10,11 +10,11 @@ export const Mission = () => {
         <div className="list-inside-wrapper py-[10%] md:w-[80%] md:py-10 flex flex-col gap-7 items-center md:flex-row  justify-between max-w-[1200px]">
           <div className="feat-content  w-[90%] max-w-md md:w-1/2">
             <h1 className="uppercase font-mont font-bold text-[28px] cap-header mb-2">
-              On a Mission
+              On a Mission To.  🚀
             </h1>
             <p className="font-mont text-base">
               We at ZENTO are on a mission to make a financially smart
-              generation and empower them on their financial journey. By
+              generation and empower them on their financial journey. <br />By
               co-creating a revolutionary banking experience combined of
               innovation, simplicity, and smart financial solutions, unlocking a
               brighter future together.
