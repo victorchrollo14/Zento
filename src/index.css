@@ -11,6 +11,10 @@
   font-weight: 700;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "montserrat", sans-serif;
 }
@@ -25,7 +29,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .mix-bg {
     background: #38b5ff;
   }
@@ -33,6 +37,16 @@ body {
 
 .cap-header {
   font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: clamp(2rem, 2vw + 1rem, 3rem);
+}
+
+.body-text {
+  font-size: clamp(1rem, 5vw, 1.25rem);
+  line-height: 20px;
+}
+
+.hero-header {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   line-height: clamp(2rem, 2vw + 1rem, 3rem);
 }
 

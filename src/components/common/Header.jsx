@@ -59,7 +59,7 @@ const NavLinks = ({ setShowNav }) => {
         About
       </Link>
       <Link
-        to="/#Contact"
+        to="#Contact"
         className="font-mont text-base"
         onClick={() => {
           console.log("clicked");

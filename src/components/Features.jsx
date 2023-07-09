@@ -5,8 +5,8 @@ import { Form } from "./form";
 export const Features = () => {
   return (
     <section className="features-section my-16 mx-4  md:my-12 lg:mx-12">
-      <header>
-        <h1 className="uppercase font-mont font-bold text-[28px] text-center cap-header">
+      <header className="mt-32">
+        <h1 className="uppercase font-mont font-bold text-[28px] text-center cap-header ">
           our features
         </h1>
         <h3 className="font-mont text-center text-base ">
