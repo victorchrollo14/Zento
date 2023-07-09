@@ -3,7 +3,7 @@ import * as React from "react"
 export function NewsLetterImage() {
   return (
     <svg
-      className="w-full h-auto"
+      className="w-full h-auto lg:max-h-[80vh]" 
       viewBox="0 0 600 600"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

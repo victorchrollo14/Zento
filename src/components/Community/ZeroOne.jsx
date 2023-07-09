@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../common/Header";
-import { NewsLetterImage } from "../../assets/svgs/ZeroOne";
+import { NewsLetterImage } from "../../assets/svgs/ZeroOneImage";
 
 export const ZeroOne = () => {
   return (
@@ -11,11 +11,11 @@ export const ZeroOne = () => {
           <NewsLetterImage />
         </div>
 
-        <div className="text-content lg:1/2 flex flex-col items-center lg:translate-y-32 px-4 lg:items-start">
+        <div className="text-content lg:1/2 flex flex-col items-center lg:translate-y-20 xl:translate-y-32 px-4 lg:items-start">
           <ZeroOneHeading />
           <h3 className="font-mont text-base text-white w-[90%] max-w-md md:text-lg md:max-w-lg text-center lg:text-left mt-3 ">
             A Finance newsletter from <span>ZENTO</span>. Subscribe to our
-            newsletter to newsletter and follow us LinkedIn to quality content
+            newsletter and follow us LinkedIn to quality content
             on Finance{" "}
           </h3>
           <form
@@ -43,7 +43,7 @@ export const ZeroOne = () => {
 const ZeroOneHeading = () => {
   return (
     <svg
-      className="w-screen max-w-sm  h-auto px-4 lg:px-0"
+      className="w-screen max-w-lg lg:w-96 xl:w-screen h-auto px-4 lg:px-0 "
       viewBox="0 0 400 86"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
