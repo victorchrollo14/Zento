@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { ZeroOne } from "../components/Community/ZeroOne";
 
 const Community = () => {
-  return (
-    <div>community</div>
-  )
-}
+  return <ZeroOne />;
+};
 
-export default Community
+export default Community;
