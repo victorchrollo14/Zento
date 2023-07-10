@@ -38,22 +38,22 @@ const TeamSection = () => {
         Meet Our Team <br />
         Avengers Assemble!!!
       </h2>
-      <div className="flex flex-wrap justify-center mt-8">
+      <div className="flex flex-row flex-wrap w-[100vw] justify-center mt-8">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="team-card mx-4 my-4 flex flex-col items-left md:w-1/4 "
+            className="team-card mx-4 my-4 flex flex-col sm:1/2 items-left md:2/4"
           >
             <img
               src={member.image}
               alt={member.name}
-              className="rounded-lg border-white w-full h-auto hover:-translate-x-3 hover:-translate-y-2 shadow-nd transition-all duration-75 ease-in-out"
+              className="rounded-[20px]  border-white w-full max-w-sm h-auto hover:-translate-x-3 hover:-translate-y-2 shadow-nd transition-all duration-75 ease-in-out"
             />
             <h3 className="mt-4 font-mont font-bold text-2xl">{member.name}</h3>
             <p className="text-base font-mont text-black font-semibold">
               {member.position}
             </p>
-            <div className="flex -translate-x-2  gap-2 items-center w-fit">
+            <div className="flex -translate-x-2  items-center w-fit h-[40px]">
               <a
                 href={member.twitter}
                 target="_blank"
@@ -61,23 +61,16 @@ const TeamSection = () => {
                 className="twitter link"
               >
                 <svg
-                  viewBox="0 0 34 34"
+                  width={44}
+                  height={20}
+                  viewBox="0 0 44 35"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="fill-gray-950 w-[35px] h-auto"
                 >
-                  <g clipPath="url(#clip0_381_12481)">
-                    <path d="M29.75 9.498a10.87 10.87 0 01-3.005.785c1.08-.617 1.91-1.594 2.3-2.757-1.027.58-2.15.99-3.322 1.21a5.35 5.35 0 00-3.819-1.575c-2.89 0-5.232 2.232-5.232 4.984 0 .39.047.771.136 1.136-4.348-.208-8.203-2.192-10.783-5.208a4.783 4.783 0 00-.709 2.506c0 1.73.924 3.255 2.328 4.149a5.41 5.41 0 01-2.37-.624v.063c0 2.415 1.803 4.43 4.196 4.887-.77.2-1.578.229-2.362.085.665 1.98 2.598 3.421 4.887 3.462a10.832 10.832 0 01-6.497 2.133c-.423 0-.84-.023-1.248-.07a15.347 15.347 0 008.02 2.24c9.622 0 14.884-7.595 14.884-14.18 0-.217-.005-.432-.015-.646a10.37 10.37 0 002.61-2.58z" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_381_12481">
-                      <path
-                        fill="#fff"
-                        transform="translate(4.25 7.083)"
-                        d="M0 0H25.5V19.8333H0z"
-                      />
-                    </clipPath>
-                  </defs>
+                  <path
+                    d="M39.375 0h-35A4.355 4.355 0 00.022 4.375L0 30.625A4.374 4.374 0 004.375 35h35a4.374 4.374 0 004.375-4.375V4.375A4.374 4.374 0 0039.375 0zm0 8.75l-17.5 10.938L4.375 8.75V4.375l17.5 10.938 17.5-10.938V8.75z"
+                    fill="#333"
+                  />
                 </svg>
               </a>
               <a
@@ -87,36 +80,45 @@ const TeamSection = () => {
                 className="text-blue-500 hover:text-blue-700"
               >
                 <svg
-                  className="h-[35px] w-auto "
-                  viewBox="0 0 42 42"
+                  width={38}
+                  height={20}
+                  viewBox="0 0 38 35"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clipPath="url(#clip0_550_14019)">
+                  <g clipPath="url(#clip0_799_11905)">
                     <path
-                      d="M13.331 33.185V15.509H7.34v17.676h5.991zm-2.995-20.091c2.09 0 3.39-1.357 3.39-3.054-.039-1.734-1.3-3.054-3.35-3.054s-3.39 1.32-3.39 3.054c0 1.697 1.3 3.054 3.311 3.054h.039zm6.311 20.091h5.992v-9.871c0-.529.038-1.056.197-1.434.433-1.055 1.419-2.149 3.074-2.149 2.168 0 3.035 1.621 3.035 3.997v9.457h5.99V23.049c0-5.429-2.955-7.955-6.897-7.955-3.232 0-4.651 1.771-5.44 2.978h.04v-2.564h-5.99c.078 1.66 0 17.677 0 17.677z"
-                      fill="#000"
+                      d="M8.476 35V11.386H.472V35h8.004zm-4-26.84c2.79 0 4.528-1.814 4.528-4.08C8.952 1.763 7.267 0 4.528 0 1.79 0 0 1.763 0 4.08c0 2.266 1.737 4.08 4.423 4.08h.052zM12.905 35h8.004V21.813c0-.706.052-1.411.264-1.916.579-1.41 1.896-2.87 4.107-2.87 2.896 0 4.055 2.165 4.055 5.34V35h8.003V21.46c0-7.254-3.949-10.629-9.215-10.629-4.318 0-6.213 2.367-7.267 3.979h.054v-3.425h-8.004c.105 2.216 0 23.614 0 23.614V35z"
+                      fill="#333"
                     />
                   </g>
                   <defs>
-                    <clipPath id="clip0_550_14019">
-                      <path
-                        fill="#fff"
-                        transform="translate(6.986 6.986)"
-                        d="M0 0H27.9452V26.1986H0z"
-                      />
+                    <clipPath id="clip0_799_11905">
+                      <path fill="#fff" d="M0 0H37.3333V35H0z" />
                     </clipPath>
                   </defs>
                 </svg>
               </a>
               <a href={member.mail}>
                 <svg
-                  className={`mt-[1px] w-[30px] h-auto fill-gray-950 `}
-                  viewBox="0 0 24 24"
+                  width={45}
+                  height={20}
+                  viewBox="0 0 45 35"
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M4.644 4.8h15.9c1.5 0 2.256.708 2.256 2.148v10.104c0 1.428-.756 2.148-2.256 2.148h-15.9c-1.5 0-2.256-.72-2.256-2.148V6.948c0-1.44.756-2.148 2.256-2.148zm7.944 10.32l8.088-6.636c.288-.24.516-.792.156-1.284-.348-.492-.984-.504-1.404-.204l-6.84 4.632L5.76 6.996c-.42-.3-1.056-.288-1.404.204-.36.492-.132 1.044.156 1.284l8.076 6.636z" />
-                </svg>{" "}
+                  <g clipPath="url(#clip0_799_11907)">
+                    <path
+                      d="M45 4.262a19.185 19.185 0 01-5.303 1.385c1.907-1.089 3.37-2.812 4.06-4.866a19.055 19.055 0 01-5.863 2.134C36.21 1.206 33.811.138 31.155.138c-5.098 0-9.232 3.938-9.232 8.795 0 .69.082 1.36.239 2.005-7.673-.368-14.476-3.869-19.03-9.19a8.441 8.441 0 00-1.25 4.421c0 3.052 1.63 5.744 4.108 7.321a9.547 9.547 0 01-4.182-1.1v.11c0 4.262 3.182 7.817 7.405 8.625a9.69 9.69 0 01-4.169.15c1.175 3.495 4.584 6.038 8.624 6.11-3.16 2.358-7.14 3.764-11.466 3.764-.745 0-1.48-.041-2.202-.123 4.086 2.496 8.938 3.952 14.152 3.952 16.982 0 26.268-13.402 26.268-25.025 0-.382-.009-.76-.027-1.138A18.297 18.297 0 0045 4.262"
+                      fill="#333"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_799_11907">
+                      <path fill="#fff" d="M0 0H45V35H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
               </a>
             </div>
           </div>

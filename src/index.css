@@ -96,7 +96,7 @@ body {
 
 .shadow-nd:hover {
   border:3px solid black;
-  box-shadow: 16px 16px 0px 2px rgb(255, 255, 255);
-  -webkit-box-shadow: 16px 16px 0px 2px rgb(255, 255, 255);
-  -moz-box-shadow: 16px 16px 0px 2px rgb(93, 9, 248);
+  box-shadow: 12px 12px 0px 2px rgb(255, 255, 255);
+  -webkit-box-shadow: 12px 12px 0px 2px rgb(255, 255, 255);
+  -moz-box-shadow: 12px 12px 0px 2px rgb(93, 9, 248);
 }
