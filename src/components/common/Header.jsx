@@ -35,16 +35,16 @@ export const Header = () => {
 
   return (
     <div
-      className={`header-container header  z-10 w-full flex justify-center `}
+      className={`header-container header  z-10 w-full flex justify-center ${
+        isFixed ? "slide-bottom fixed top-5" : "hidden"
+      }`}
     >
       <Navbar
         fluid
         rounded
-        className={`p-0 bg-black w-[95vw] rounded-[25px] md:rounded-[40px] py-4 sm:py-6 z-30 ${
-          isFixed ? "slide-bottom fixed top-5" : "hidden"
-        } `}
+        className={`p-0 bg-black w-[95vw] rounded-[25px] md:rounded-[40px] py-4 sm:py-6 z-30  `}
       >
-        <Navbar.Brand href="https://flowbite-react.com" className="pl-5">
+        <Navbar.Brand href="/" className="pl-5">
           <img
             src={logo}
             alt="Zento Logo"

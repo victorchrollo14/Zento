@@ -7,10 +7,10 @@ const MobileNav = ({ showNav, setShowNav, setShowHamNav }) => {
       className={`mobile-nav  fixed top-0 right-0 translate-x-[100vw] -translate-y-5 ${
         showNav
           ? "inset-0 overflow-hidden  slide-left"
-          : "slide-out translate-x-[100vw] z-10"
+          : "slide-out  z-10"
       }  h-screen w-screen bg-light-green border-l border-t border-b border-b-drkPurple border-gray-300`}
     >
-      <div className="flex justify-end pt-10 px-2"></div>
+      <div className="flex justify-end pt-16 px-2"></div>
       <ul className="p-3 mt-10">
         <li className="border-b border-b-drkPurple py-5 pl-4  hover:bg-white">
           <a
