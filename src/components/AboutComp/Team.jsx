@@ -1,8 +1,8 @@
 import React from "react";
 import person1 from "../../assets/Images/ceo.jpeg";
-import person2 from "../../assets/Images/cto.png";
+import person2 from "../../assets/Images/cto.jpg";
 import person3 from "../../assets/Images/cmo.png";
-import { Twitter } from "../../assets/svgs/socials";
+import person4 from "../../assets/Images/person1.png";
 
 const TeamSection = () => {
   const teamMembers = [
@@ -30,6 +30,14 @@ const TeamSection = () => {
       mail: "mailto:gkosurkar@gmail.com",
       linkedIn: "https://www.linkedin.com/in/gauri-kosurkar-890985209",
     },
+    {
+      name: "Bangalore",
+      position: "dev",
+      image: person4,
+      twitter: "",
+      mail: "mailto:Victor20030214@gmail.com",
+      linkedIn: "",
+    },
   ];
 
   return (
@@ -42,19 +50,21 @@ const TeamSection = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="team-card mx-4 my-4 flex flex-col sm:1/2 items-left md:2/4"
+            className="team-card mx-4 my-4 flex flex-col sm:1/2 items-left md:2/4 "
           >
-            <img
-              src={member.image}
-              alt={member.name}
-              className="rounded-[20px]  border-white w-full max-w-sm h-auto hover:scale-95 transition-all duration-75 ease-in-out"
-            />
+            <a href={member.linkedIn}>
+              <img
+                src={member.image}
+                alt={member.name}
+                className="rounded-[20px]  border-white w-full max-w-sm h-auto hover:scale-95 transition-all duration-75 ease-in-out"
+              />
+            </a>
+
             <h3 className="mt-4 font-mont font-bold text-2xl">{member.name}</h3>
             <p className="text-base font-mont text-black font-semibold">
               {member.position}
             </p>
             <div className="flex -translate-x-2  items-center w-fit h-[40px]">
-             
               <a
                 href={member.linkedIn}
                 target="_blank"

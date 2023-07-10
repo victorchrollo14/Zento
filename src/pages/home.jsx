@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <>
+      <Header />
       <motion.main
         className="app min-screen absolute   overflow-hidden"
         layoutId="page"
@@ -21,7 +22,6 @@ const Home = () => {
         exit={{ opacity: 1, y: "100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
       >
-        <Header />
 
         <section className="hero-section mix-bg  lg:min-h-screen ">
           <div className="wrapper p-4 flex justify-center items-center flex-col md:w-screen ">
