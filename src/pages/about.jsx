@@ -10,7 +10,6 @@ const About = () => {
   return (
     <>
       <Header />
-
       <motion.main
         layoutId="page1"
         initial={{ y: "100%" }}

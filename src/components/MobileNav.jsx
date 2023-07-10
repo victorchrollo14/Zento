@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 const MobileNav = ({ showNav, setShowNav, setShowHamNav }) => {
   return (
     <div
-      className={`mobile-nav  fixed top-0 right-0 translate-x-[100vw] -translate-y-5 ${
+      className={`mobile-nav  fixed top-0 -right-[100vw] translate-x-[100vw] -translate-y-5 ${
         showNav
-          ? "inset-0 overflow-hidden  slide-left"
+          ? "inset-0 overflow-hidden right-0 slide-left"
           : "slide-out  z-10"
       }  h-screen w-screen bg-light-green border-l border-t border-b border-b-drkPurple border-gray-300`}
     >
