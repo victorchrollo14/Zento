@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const MobileNav = ({ setShowNav }) => {
+const MobileNav = ({ showNav, setShowNav }) => {
   return (
-    <div className="mobile-nav fixed top-0 right-0 h-screen w-screen bg-light-green border-l border-t border-b border-b-drkPurple border-gray-300">
+    <div
+      className={`mobile-nav fixed top-0 right-0 -translate-y-5 ${
+        showNav ? "inset-0 overflow-hidden" : ""
+      }  h-screen w-screen bg-light-green border-l border-t border-b border-b-drkPurple border-gray-300`}
+    >
       <div className="flex justify-end pt-5 px-2">
         <button className="text-drkPurple" onClick={() => setShowNav(false)}>
           <svg

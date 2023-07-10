@@ -12,9 +12,10 @@ import desktopHero from "../assets/Images/desktopHero.svg";
 const Home = () => {
   return (
     <>
-      <div className="app min-h-screen">
+      <div className="app min-screen overflow-hidden">
+        <Header />
+
         <section className="hero-section mix-bg  lg:min-h-screen ">
-          <Header />
           <div className="wrapper p-4 flex justify-center items-center flex-col md:w-screen ">
             <div className="lg:w-[92%]  md:flex md:flex-col lg:flex-row md:justify-between 2xl:max-w-6xl mt-16">
               <div className="hero-content md:mt-16  md:w-full lg:w-1/2 md:flex flex-col md:items-center lg:items-start">
@@ -48,7 +49,11 @@ const Home = () => {
                   />
                 </div>
                 <div className="desktop-Image hidden lg:block mt-16 ">
-                  <img src={desktopHero} alt="Hero Image" className="w-full h-auto" />
+                  <img
+                    src={desktopHero}
+                    alt="Hero Image"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>

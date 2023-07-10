@@ -18,20 +18,24 @@ export const Header = () => {
     setIsFixed(show);
   };
 
-  const debouncedScroll = debounce(changeHeader, 10);
-
   useEffect(() => {
-    window.addEventListener("scroll", debouncedScroll);
+    if (showNav) {
+      document.body.style.height = "100%";
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style = "";
+    }
+
+    window.addEventListener("scroll", changeHeader);
     return () => {
-      window.removeEventListener("scroll", debouncedScroll);
-      debouncedScroll.cancel();
+      window.removeEventListener("scroll", changeHeader);
     };
   });
 
   return (
     <div
-      className={`header-container header ${
-        isFixed ? "fixed top-5 header-visible" : "header-hidden"
+      className={`header-container header  ${
+        isFixed ? "slide-bottom fixed top-5" : "hidden"
       } z-10 w-full flex justify-center `}
     >
       <Navbar
@@ -46,7 +50,9 @@ export const Header = () => {
             className="w-32 h-auto md:w-40  sm:ml-8"
           />
         </Navbar.Brand>
-        {showNav ? <MobileNav setShowNav={setShowNav} /> : null}
+        {showNav ? (
+          <MobileNav showNav={showNav} setShowNav={setShowNav} />
+        ) : null}
         <Menu setShowNav={setShowNav} />
         <NavLinks setShowNav={setShowNav} />
       </Navbar>
