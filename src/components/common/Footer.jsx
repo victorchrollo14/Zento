@@ -84,32 +84,27 @@ export const Footer = () => {
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-20" id="Contact">
             <h3 className="text-2xl font-bold mb-2 font-mont">Contact</h3>
             <div className="font-mont text-base font-medium">
-              <a href="mailto:" className="flex gap-2 ">
+              <a href="mailto:" className={`flex gap-2 mail hover:text-light-green hover:scale-105 transition-transform duration-100 ease-linear`}>
                 {" "}
                 <svg
-                  className="min-w-[24px] w-[24px] h-auto"
+                  className={`min-w-[24px] w-[24px] h-auto fill-white `}
                   viewBox="0 0 24 24"
-                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M4.644 4.8h15.9c1.5 0 2.256.708 2.256 2.148v10.104c0 1.428-.756 2.148-2.256 2.148h-15.9c-1.5 0-2.256-.72-2.256-2.148V6.948c0-1.44.756-2.148 2.256-2.148zm7.944 10.32l8.088-6.636c.288-.24.516-.792.156-1.284-.348-.492-.984-.504-1.404-.204l-6.84 4.632L5.76 6.996c-.42-.3-1.056-.288-1.404.204-.36.492-.132 1.044.156 1.284l8.076 6.636z"
-                    fill="#fff"
                   />
                 </svg>{" "}
-                <span className="">help@zento.money</span>
+                <span className="">contact@zento.money</span>
               </a>
-              <ul className="mt-2 flex ">
-                <a href="#">
+              <ul className="mt-3 flex gap-2 ">
+                <a href="#" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
                   <Twitter />{" "}
                 </a>{" "}
-                <a href="#">
-                  <Facebook />{" "}
-                </a>{" "}
-                <a href="#">
+                <a href="#" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
                   <LinkedIn />
                 </a>
-                <a href="#">
+                <a href="#" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
                   <Instagram />
                 </a>
               </ul>

@@ -86,10 +86,10 @@ body {
   }
 }
 
-.header-visible {
-  transform: translateY(0);
+.green-hover:hover svg path{
+  fill:#C1FF72;
 }
 
-.header-hidden {
-  transform: translateY(-100%);
+.mail:hover svg{
+  fill: #C1FF72;
 }
