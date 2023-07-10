@@ -4,10 +4,11 @@ import logo from "../../assets/Images/logo.png";
 import MobileNav from "../MobileNav";
 import { Link } from "react-router-dom";
 import { Link as Link2 } from "react-scroll";
-import { debounce } from "lodash";
+import cross from "../../assets/Images/cross.svg";
 
 export const Header = () => {
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(null);
+  const [showHamMenu, setShowHamMenu] = useState(true);
   const [isFixed, setIsFixed] = useState(true);
   const [prevScroll, setPrevScroll] = useState(0);
 
@@ -34,14 +35,14 @@ export const Header = () => {
 
   return (
     <div
-      className={`header-container header  ${
-        isFixed ? "slide-bottom fixed top-5" : "hidden"
-      } z-10 w-full flex justify-center `}
+      className={`header-container header  z-10 w-full flex justify-center `}
     >
       <Navbar
         fluid
         rounded
-        className="p-0 bg-black w-[95vw] rounded-[25px] md:rounded-[40px] py-4 sm:py-6  "
+        className={`p-0 bg-black w-[95vw] rounded-[25px] md:rounded-[40px] py-4 sm:py-6 z-30 ${
+          isFixed ? "slide-bottom fixed top-5" : "hidden"
+        } `}
       >
         <Navbar.Brand href="https://flowbite-react.com" className="pl-5">
           <img
@@ -50,19 +51,32 @@ export const Header = () => {
             className="w-32 h-auto md:w-40  sm:ml-8"
           />
         </Navbar.Brand>
-        {showNav ? (
-          <MobileNav showNav={showNav} setShowNav={setShowNav} />
-        ) : null}
-        <Menu setShowNav={setShowNav} />
+
+        {showHamMenu ? (
+          <Menu setShowNav={setShowNav} setShowHamMenu={setShowHamMenu} />
+        ) : (
+          <Cancel setShowHamMenu={setShowHamMenu} setShowNav={setShowNav} />
+        )}
         <NavLinks setShowNav={setShowNav} />
       </Navbar>
+      <MobileNav
+        showNav={showNav}
+        setShowNav={setShowNav}
+        setShowHamNav={setShowHamMenu}
+      />
     </div>
   );
 };
 
-const Menu = ({ setShowNav }) => {
+const Menu = ({ setShowNav, setShowHamMenu }) => {
   return (
-    <div className="menu mx-3 sm:hidden pr-3" onClick={() => setShowNav(true)}>
+    <div
+      className="menu mx-3 sm:hidden pr-3"
+      onClick={() => {
+        setShowNav(true);
+        setShowHamMenu(false);
+      }}
+    >
       <svg
         width={30}
         height={30}
@@ -78,6 +92,22 @@ const Menu = ({ setShowNav }) => {
         />
       </svg>
     </div>
+  );
+};
+
+const Cancel = ({ setShowHamMenu, setShowNav }) => {
+  return (
+    <>
+      <img
+        className="h-auto w-[44px] mx-3 pr-3 "
+        src={cross}
+        alt=""
+        onClick={() => {
+          setShowHamMenu(true);
+          setShowNav(false);
+        }}
+      />
+    </>
   );
 };
 

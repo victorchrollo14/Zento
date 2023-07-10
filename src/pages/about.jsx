@@ -8,9 +8,10 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.main
-      initial={{ y: "100%"}}
-      animate={{ y: "0%"}}
-      exit={{ opacity: 1 }}
+      layoutId="page1"
+      initial={{ y: "100%" }}
+      animate={{ y: "0%" }}
+      exit={{ opacity: 1, y: "100%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       className="app min-h-screen bg-lYellow overflow-hidden"
     >

@@ -14,10 +14,11 @@ const Home = () => {
   return (
     <>
       <motion.main
-        className="app min-screen overflow-hidden"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 1 }}
+        className="app min-screen absolute   overflow-hidden"
+        layoutId="page"
+        initial={{ y: "100%" }}
+        animate={{ y: "0%" }}
+        exit={{ opacity: 1, y: "100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
       >
         <Header />

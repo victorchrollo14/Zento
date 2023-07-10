@@ -95,8 +95,34 @@ body {
 }
 
 .shadow-nd:hover {
-  border:3px solid black;
+  border: 3px solid black;
   box-shadow: 12px 12px 0px 2px rgb(255, 255, 255);
   -webkit-box-shadow: 12px 12px 0px 2px rgb(255, 255, 255);
   -moz-box-shadow: 12px 12px 0px 2px rgb(93, 9, 248);
+}
+
+.slide-left {
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-out {
+  animation: slide-out 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translate(100vw, -1.25rem);
+  }
+  100% {
+    transform: translate(0, -1.25rem);
+  }
+}
+
+@keyframes slide-out {
+  0%{
+    transform: translate(0, -1.25rem);
+  }
+  100%{
+    transform: translateX(-100vw, -1.25rem);
+  }
 }
