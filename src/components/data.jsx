@@ -10,6 +10,7 @@ import DebitImage from "../assets/Images/Debit.svg";
 
 export const featuresData = [
   {
+    idName:"Scan-Feat",
     title: "Scan and pay.",
     subtitle: "Bhaiya QR Khaha Hai... 😎",
     content:
@@ -18,7 +19,8 @@ export const featuresData = [
     textColor: "text-white",
     image: <ScannerImage />,
   },
-  {
+  { 
+    idName:"Split-Bill",
     title: "Split your Bills.",
     subtitle: "Tu Tera Me Mera....  😁",
     content:
@@ -28,6 +30,7 @@ export const featuresData = [
     image: <BillImage />,
   },
   {
+    idName:"Money-Insight",
     title: "Get  Money Insights.",
     subtitle: "Where Does All your money go   🤔",
     content:
@@ -37,6 +40,7 @@ export const featuresData = [
     image: <InsightsImage />,
   },
   {
+    idName:"Goal-Savings",
     title: "Goal Based Savings.",
     subtitle: "Gullak Hamarein Sapno Ki 💰",
     content:

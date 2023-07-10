@@ -12,7 +12,7 @@ export const MoreOffers = () => {
         Here are some offers that you can’t <br />
         refuse!!
       </h3>
-      <ul className="more-offers py-16 bg-drkstPurple my-6 flex flex-col gap-20 items-center justify-center md:my-20">
+      <ul className="more-offers py-16 bg-drkstPurple my-6 flex flex-col gap-20 items-center justify-center ">
         <ListItems />
       </ul>
     </section>

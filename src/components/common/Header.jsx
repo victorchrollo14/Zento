@@ -41,7 +41,7 @@ export const Header = () => {
       <Navbar
         fluid
         rounded
-        className="p-0 bg-black w-[95vw] rounded-[25px] py-4 sm:py-6  "
+        className="p-0 bg-black w-[95vw] rounded-[25px] md:rounded-[40px] py-4 sm:py-6  "
       >
         <Navbar.Brand href="https://flowbite-react.com" className="pl-5">
           <img
@@ -83,16 +83,25 @@ const Menu = ({ setShowNav }) => {
 
 const NavLinks = () => {
   return (
-    <nav className="navlinks gap-3 text-white mx-4 hidden sm:flex sm:mr-8 sm:gap-7">
-      <Link to="/" className="font-mont text-base cursor-pointer">
+    <nav className="navlinks gap-3 text-white mx-4 md:mx-16 hidden sm:flex sm:mr-8 sm:gap-7">
+      <Link
+        to="/"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
+      >
         Home
       </Link>
 
-      <Link to="/About" className="font-mont text-base cursor-pointer">
+      <Link
+        to="/About"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
+      >
         About
       </Link>
 
-      <Link to="/community" className="font-mont text-base cursor-pointer">
+      <Link
+        to="/community"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
+      >
         Community
       </Link>
       <Link2
@@ -101,7 +110,7 @@ const NavLinks = () => {
         smooth={true}
         offset={-70}
         duration={600}
-        className="font-mont text-base cursor-pointer"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
       >
         Contact
       </Link2>

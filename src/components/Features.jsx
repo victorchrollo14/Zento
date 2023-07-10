@@ -32,7 +32,7 @@ export const Features = () => {
 const ListItems = () => {
   let id = 0;
   let items = featuresData.map(
-    ({ title, subtitle, content, bgColor, textColor, image }) => {
+    ({ idName, title, subtitle, content, bgColor, textColor, image }) => {
       id++;
       let classList = `list-inside-wrapper py-[10%] md:py-10 sm:w-4/5 flex flex-col gap-7 items-center md:flex-row  justify-between  lg:mx-16 xl:max-w-[1000px]`;
       if (id % 2 == 0) {
@@ -41,11 +41,12 @@ const ListItems = () => {
 
       return (
         <li
+          id={idName}
           key={crypto.randomUUID()}
           className={` my-5 ${bgColor} ${textColor}  rounded-xl w-full flex justify-center items-center md:h-[500px] xl:h-[650px]`}
         >
           <div className={classList}>
-            <div className="feat-content  w-[90%] max-w-md md:w-1/2">
+            <div className={`feat-content  w-[90%] max-w-md md:w-1/2 ${idName !== "Scan-Feat" || "lg:-translate-y-10 xl:-translate-y-16"}`}>
               <h1 className="uppercase font-mont font-bold text-[28px] cap-header mb-3">
                 {title}
               </h1>
