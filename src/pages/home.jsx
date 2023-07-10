@@ -8,11 +8,18 @@ import { JoinCommunity } from "../components/comm";
 import { Footer } from "../components/common/Footer";
 import tabHeroImage from "../assets/Images/HeroImage.svg";
 import desktopHero from "../assets/Images/desktopHero.svg";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
-      <div className="app min-screen overflow-hidden">
+      <motion.main
+        className="app min-screen overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 1 }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+      >
         <Header />
 
         <section className="hero-section mix-bg  lg:min-h-screen ">
@@ -64,7 +71,7 @@ const Home = () => {
         <MoreOffers />
         <JoinCommunity />
         <Footer />
-      </div>
+      </motion.main>
     </>
   );
 };
