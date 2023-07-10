@@ -1,7 +1,7 @@
 import React from "react";
 import person1 from "../../assets/Images/ceo.jpeg";
-import person2 from "../../assets/Images/person2.png";
-import person3 from "../../assets/Images/person3.png";
+import person2 from "../../assets/Images/cto.png";
+import person3 from "../../assets/Images/cmo.png";
 import { Twitter } from "../../assets/svgs/socials";
 
 const TeamSection = () => {
@@ -18,17 +18,17 @@ const TeamSection = () => {
       name: "Delhi",
       position: "Co-Founder and CTO",
       image: person2,
-      twitter: "https://twitter.com/Aaditya_008?t=gQ7vrI8zdZFS4yfv3dvkVg&s=08",
-      mail: "mailto:aaditya@zento.money",
-      linkedIn: "https://www.linkedin.com/in/aaditya-rathod-172a531bb",
+      twitter: "https://twitter.com/_shivam_s__",
+      mail: "mailto:shivam@zento.money",
+      linkedIn: "https://www.linkedin.com/in/shivam-singh-059158229/",
     },
     {
-      name: "Lucknow",
+      name: "Nagpur",
       position: "CMO",
       image: person3,
       twitter: "https://twitter.com/Aaditya_008?t=gQ7vrI8zdZFS4yfv3dvkVg&s=08",
-      mail: "mailto:aaditya@zento.money",
-      linkedIn: "https://www.linkedin.com/in/aaditya-rathod-172a531bb",
+      mail: "mailto:gkosurkar@gmail.com",
+      linkedIn: "https://www.linkedin.com/in/gauri-kosurkar-890985209",
     },
   ];
 
@@ -54,25 +54,7 @@ const TeamSection = () => {
               {member.position}
             </p>
             <div className="flex -translate-x-2  items-center w-fit h-[40px]">
-              <a
-                href={member.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="twitter link"
-              >
-                <svg
-                  width={44}
-                  height={20}
-                  viewBox="0 0 44 35"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M39.375 0h-35A4.355 4.355 0 00.022 4.375L0 30.625A4.374 4.374 0 004.375 35h35a4.374 4.374 0 004.375-4.375V4.375A4.374 4.374 0 0039.375 0zm0 8.75l-17.5 10.938L4.375 8.75V4.375l17.5 10.938 17.5-10.938V8.75z"
-                    fill="#333"
-                  />
-                </svg>
-              </a>
+             
               <a
                 href={member.linkedIn}
                 target="_blank"
@@ -99,7 +81,7 @@ const TeamSection = () => {
                   </defs>
                 </svg>
               </a>
-              <a href={member.mail}>
+              <a href={member.twitter}>
                 <svg
                   width={45}
                   height={20}
@@ -118,6 +100,25 @@ const TeamSection = () => {
                       <path fill="#fff" d="M0 0H45V35H0z" />
                     </clipPath>
                   </defs>
+                </svg>
+              </a>
+              <a
+                href={member.mail}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="twitter link"
+              >
+                <svg
+                  width={44}
+                  height={20}
+                  viewBox="0 0 44 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.375 0h-35A4.355 4.355 0 00.022 4.375L0 30.625A4.374 4.374 0 004.375 35h35a4.374 4.374 0 004.375-4.375V4.375A4.374 4.374 0 0039.375 0zm0 8.75l-17.5 10.938L4.375 8.75V4.375l17.5 10.938 17.5-10.938V8.75z"
+                    fill="#333"
+                  />
                 </svg>
               </a>
             </div>
