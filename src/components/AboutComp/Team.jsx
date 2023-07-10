@@ -47,7 +47,7 @@ const TeamSection = () => {
             <img
               src={member.image}
               alt={member.name}
-              className="rounded-lg w-full h-auto"
+              className="rounded-lg border-white w-full h-auto hover:-translate-x-3 hover:-translate-y-2 shadow-nd transition-all duration-75 ease-in-out"
             />
             <h3 className="mt-4 font-mont font-bold text-2xl">{member.name}</h3>
             <p className="text-base font-mont text-black font-semibold">

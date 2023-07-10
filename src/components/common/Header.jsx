@@ -86,21 +86,21 @@ const NavLinks = () => {
     <nav className="navlinks gap-3 text-white mx-4 md:mx-16 hidden sm:flex sm:mr-8 sm:gap-7">
       <Link
         to="/"
-        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-110 md:text-lg transition-all duration-150 ease-in"
       >
         Home
       </Link>
 
       <Link
         to="/About"
-        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-110 md:text-lg  transition-all duration-150 ease-linear"
       >
         About
       </Link>
 
       <Link
         to="/community"
-        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-110 md:text-lg transition-all duration-150 ease-in"
       >
         Community
       </Link>
@@ -110,7 +110,7 @@ const NavLinks = () => {
         smooth={true}
         offset={-70}
         duration={600}
-        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-105 md:text-lg transition-colors duration-150 ease-in"
+        className="font-mont text-base cursor-pointer hover:text-light-green hover:scale-110 md:text-lg transition-all duration-150 ease-in"
       >
         Contact
       </Link2>

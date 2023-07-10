@@ -86,10 +86,17 @@ body {
   }
 }
 
-.green-hover:hover svg path{
-  fill:#C1FF72;
+.green-hover:hover svg path {
+  fill: #c1ff72;
 }
 
-.mail:hover svg{
-  fill: #C1FF72;
+.mail:hover svg {
+  fill: #c1ff72;
+}
+
+.shadow-nd:hover {
+  border:3px solid black;
+  box-shadow: 16px 16px 0px 2px rgb(255, 255, 255);
+  -webkit-box-shadow: 16px 16px 0px 2px rgb(255, 255, 255);
+  -moz-box-shadow: 16px 16px 0px 2px rgb(93, 9, 248);
 }
