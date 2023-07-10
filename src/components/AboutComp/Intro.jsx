@@ -5,10 +5,10 @@ import AboutImage from "../../assets/Images/Aboutimage.svg";
 export const Intro = () => {
   return (
     <>
-      <section className="intro  bg-lYellow pb-10 h-auto lg:h-screen md:pb-20 ">
+      <section className="intro  bg-lYellow pb-10 h-auto lg:h-screen md:pb-20 2xl:h-auto 2xl:pb-28">
         <Header />
         <div className="content-wrapper  flex flex-col items-center justify-center  my-16 md:my-8 gap-10 ">
-          <div className="image max-w-3xl lg:w-[600px] mt-10 md:mt-20">
+          <div className="image  lg:w-[600px] mt-10 md:mt-20 2xl:w-[600px]">
             <img src={AboutImage} alt="About us image" />
           </div>
           <div className="text-content flex flex-col items-center text-left mx-4 md:text-center max-w-xl lg:max-w-4xl ">

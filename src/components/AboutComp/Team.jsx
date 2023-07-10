@@ -1,5 +1,5 @@
 import React from "react";
-import person1 from "../../assets/Images/person1.png";
+import person1 from "../../assets/Images/ceo.jpeg";
 import person2 from "../../assets/Images/person2.png";
 import person3 from "../../assets/Images/person3.png";
 import { Twitter } from "../../assets/svgs/socials";

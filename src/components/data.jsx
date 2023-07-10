@@ -53,7 +53,7 @@ export const featuresData = [
 
 export const moreOffersData = [
   {
-    title: "100% Digital Banking. 🤩",
+    title: "100% Digital Banking. ",
     subtitle:
       `Banking Whenever,  Wherever\n
       (Humari koi offline shakha nhi hai).   `,
