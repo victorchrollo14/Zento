@@ -11,11 +11,11 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   let hoverGreen =
-    "hover:text-light-green hover:text-xl md:text-lg transition-all duration-150 ease-in";
+    "hover:text-light-green hover:scale-105  transition-all duration-150 ease-in";
 
   return (
     <>
-      <footer className="bg-gray-900 text-white p-8 pt-10 sm:p-16 ">
+      <footer className="bg-gray-900  text-white p-8 pt-10 sm:p-16 ">
         <div className="container mx-auto flex flex-wrap justify-between gap-10 ">
           {/* Logo and Description */}
           <div className="w-full sm:w-1/2 md:w-1/3   md:mb-0 md:min-w-[320px]">
@@ -41,17 +41,17 @@ export const Footer = () => {
           {/* Pages Header */}
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6  md:mb-0">
             <h3 className="text-2xl font-bold mb-2 font-mont">Pages</h3>
-            <ul className="font-mont text-base font-medium">
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+            <ul className="font-mont text-base ">
+              <li className={`mb-2  cursor-pointer w-fit ${hoverGreen}`}>
                 <a href="/">Home</a>
               </li>
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+              <li className={`mb-2  cursor-pointer w-fit ${hoverGreen}`}>
                 <a href="/about">About</a>
               </li>
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+              <li className={`mb-2  cursor-pointer w-fit ${hoverGreen}`}>
                 <a href="/community">Community</a>
               </li>
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+              <li className={`mb-2  cursor-pointer w-fit ${hoverGreen}`}>
                 <a href="/#Contact">Contact</a>
               </li>
             </ul>
@@ -60,20 +60,20 @@ export const Footer = () => {
           {/* Features Header */}
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6  md:mb-0">
             <h3 className="text-2xl font-bold mb-2 font-mont">Features</h3>
-            <ul className="font-mont text-base font-medium">
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+            <ul className="font-mont text-base ">
+              <li className={`mb-2  cursor-pointer  w-fit ${hoverGreen}`}>
                 {" "}
                 <a href="/#Scan-Feat">Scan and Pay</a>
               </li>
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+              <li className={`mb-2  cursor-pointer w-fit ${hoverGreen}`}>
                 {" "}
                 <a href="/#Split-Bill">Split Your Bills</a>
               </li>
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+              <li className={`mb-2  cursor-pointer w-fit ${hoverGreen}`}>
                 {" "}
                 <a href="/#Money-Insight">Get Money Insights</a>
               </li>
-              <li className={`mb-2  cursor-pointer ${hoverGreen}`}>
+              <li className={`mb-2  cursor-pointer w-fit ${hoverGreen}`}>
                 {" "}
                 <a href="/#Goal-Savings">Goal Based Savings</a>
               </li>
@@ -83,7 +83,7 @@ export const Footer = () => {
           {/* Contact Header */}
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-20" id="Contact">
             <h3 className="text-2xl font-bold mb-2 font-mont">Contact</h3>
-            <div className="font-mont text-base font-medium">
+            <div className="font-mont text-base ">
               <a href="mailto:" className={`flex gap-2 mail hover:text-light-green hover:scale-105 transition-transform duration-100 ease-linear`}>
                 {" "}
                 <svg
@@ -98,13 +98,13 @@ export const Footer = () => {
                 <span className="">contact@zento.money</span>
               </a>
               <ul className="mt-3 flex gap-2 ">
-                <a href="#" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
+                <a href="https://twitter.com/zento_money" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
                   <Twitter />{" "}
                 </a>{" "}
-                <a href="#" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
+                <a href="https://www.linkedin.com/company/zento.money/" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
                   <LinkedIn />
                 </a>
-                <a href="#" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
+                <a href="https://www.instagram.com/zento.money/" className="green-hover hover:scale-110 transition-transform duration-100 ease-linear">
                   <Instagram />
                 </a>
               </ul>

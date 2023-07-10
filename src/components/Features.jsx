@@ -43,7 +43,7 @@ const ListItems = () => {
         <li
           id={idName}
           key={crypto.randomUUID()}
-          className={` my-5 ${bgColor} ${textColor}  rounded-xl w-full flex justify-center items-center md:h-[500px] xl:h-[650px]`}
+          className={` my-5 ${bgColor} ${textColor} py-5 sm:py-0  rounded-xl w-full flex justify-center items-center md:h-[500px] xl:h-[650px]`}
         >
           <div className={classList}>
             <div className={`feat-content  w-[90%] max-w-md md:w-1/2 ${idName !== "Scan-Feat" || "lg:-translate-y-10 xl:-translate-y-16"}`}>

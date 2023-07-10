@@ -55,7 +55,7 @@ export const moreOffersData = [
   {
     title: "100% Digital Banking. 🤩",
     subtitle:
-      `Banking Whenever,  Wherever 
+      `Banking Whenever,  Wherever\n
       (Humari koi offline shakha nhi hai).   `,
     image: <BankingImage />,
   },

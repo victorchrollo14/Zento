@@ -11,12 +11,13 @@ export const JoinCommunity = () => {
           community
         </h1>
         <div className="buttons w-[90vw] flex flex-col justify-center gap-4 my-8 max-w-md ">
-          <a href="">
+          <a href="https://chat.whatsapp.com/CBCXsN0bjxYHpjTSFbvQXa">
             <WhatsAppButton />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/company/zento.money/">
             <LinkedIn />
           </a>
+          
         </div>
       </div>
     </section>

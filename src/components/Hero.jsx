@@ -10,7 +10,7 @@ export const HeroContent = () => {
           By the <span className="text-light-green">Gen-Z.</span>
         </h1>
         <h3 className="font-normal text-left  font-mont mt-4  max-w-sm md:text-center lg:text-left">
-          <span className="text-drkYellow font-bold body-text">The Gen-Z Banking App,</span>{" "}
+          <span className="text-drkYellow font-bold body-text">The Gen-Z Banking App,</span>{" "} <br />
           Subscribe to our newsletter to get stay in loop with latest content
           related to finances.
         </h3>

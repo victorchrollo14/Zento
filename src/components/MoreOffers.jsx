@@ -4,13 +4,13 @@ import { moreOffersData } from "./data";
 export const MoreOffers = () => {
   return (
     <section className="more-offers-section mt-16">
-      <h1 className="uppercase font-mont font-bold text-[28px] text-center cap-header">
+      <h1 className="uppercase font-mont  text-center font-bold cap-header ">
         We Have More
         <br /> Offers for you
       </h1>
-      <h3 className="font-mont text-center text-base ">
+      <h3 className="font-mont text-center md:text-[28px] mt-2 md:mt-5 leading-tight ">
         Here are some offers that you can’t <br />
-        refuse!!
+        refuse 🔥🔥🔥
       </h3>
       <ul className="more-offers py-16 bg-drkstPurple my-6 flex flex-col gap-20 items-center justify-center ">
         <ListItems />
