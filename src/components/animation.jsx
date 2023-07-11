@@ -68,6 +68,7 @@ export const AnimateHeader = ({ children }) => {
       initial={{ translateY: "100px", opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: "easeIn" }}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>
@@ -80,6 +81,7 @@ export const AnimateSub = ({ children }) => {
       className="w-full flex justify-center"
       initial={{ translateY: "100px", opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.5, ease: "easeIn", delay: 0.3 }}
     >
       {children}

@@ -76,7 +76,7 @@ const ListItems = () => {
                 initial={{ translateX: translateText, opacity: 0 }}
                 whileInView={{ translateX: 0, opacity: 1 }}
                 transition={{ duration: 0.4, ease: "easeIn" }}
-                viewport={{ amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="uppercase font-mont font-bold text-[28px] cap-header mb-3"
               >
                 {title}
@@ -85,6 +85,7 @@ const ListItems = () => {
                 initial={{ translateX: translateText, opacity: 0 }}
                 whileInView={{ translateX: 0, opacity: 1 }}
                 transition={{ duration: 0.4, ease: "easeIn", delay: 0.2 }}
+                viewport={{ once: true }}
               >
                 <h3 className="font-mont font-semibold text-xl mb-2">
                   {subtitle}
@@ -96,6 +97,7 @@ const ListItems = () => {
               initial={{ translateX: translateImg, opacity: 0 }}
               whileInView={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 0.4, ease: "easeIn", delay: 0.2 }}
+              viewport={{ once: true }}
               className="image w-[90%]  max-w-lg md:w-1/2 xl:w-[700px]"
             >
               {image}
