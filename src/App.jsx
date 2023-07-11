@@ -40,12 +40,15 @@ export default App;
 /* 
     Done:
       ✅ set up Router 
-    
-    Task List 
       🌟 Set Up color, typography, image files etc
       🌟 Header component and Hero section.
       🌟 Feature cards and cta
       🌟 more Offers
       🌟 footer
+    
+    Task List 
+      🌟 Add typing animation
+      🌟 scroll animation
+      🌟 parallax animation for cards
 
 */

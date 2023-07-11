@@ -53,7 +53,7 @@ export const featuresData = [
 
 export const moreOffersData = [
   {
-    title: "100% Digital Banking. ",
+    title: "100% Digital Banking. 🏦",
     subtitle:
       `Banking Whenever,  Wherever\n
       (Humari koi offline shakha nhi hai).   `,
@@ -67,7 +67,7 @@ export const moreOffersData = [
   },
   {
     title: "No hidden charges 🔍",
-    subtitle: "Bank hidden charges - We don't do that here . 😌",
+    subtitle: "Bank hidden charges - We don't do that here . ",
     image: <HiddenImage />,
   },
   {

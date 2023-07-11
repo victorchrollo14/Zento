@@ -56,7 +56,7 @@ const TeamSection = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="rounded-[20px]  border-white w-full max-w-sm h-auto hover:scale-95 transition-all duration-75 ease-in-out"
+                className="rounded-[20px]  border-white w-full max-w-[300px] h-auto hover:scale-95 transition-all duration-75 ease-in-out"
               />
             </a>
 

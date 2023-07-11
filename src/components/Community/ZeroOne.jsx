@@ -15,8 +15,8 @@ export const ZeroOne = () => {
           <div className="text-content lg:1/2 flex flex-col items-center lg:translate-y-20 xl:translate-y-32 px-4 lg:items-start">
             <img src={ZeroOneHeader} alt="zero one header" />
             <h3 className="font-mont text-base text-white w-[90%] max-w-md md:text-lg md:max-w-lg text-center lg:text-left mt-3 ">
-              A Finance newsletter from <span>ZENTO</span>. Subscribe to our
-              newsletter and follow us LinkedIn to quality content on Finance{" "}
+              A Finance newsletter from <span>ZENTO</span>. <br />Subscribe to our
+              newsletter and follow us LinkedIn to quality content on Finance.{" "}
             </h3>
             <form
               action=""

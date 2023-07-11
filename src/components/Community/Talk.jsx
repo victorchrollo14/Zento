@@ -13,7 +13,7 @@ export const FinanceTalk = () => {
               Financial Education For All.  🎓
             </h1>
             <p className="font-mont text-base">
-              "The Finance Education for All lecture series provides college
+              "The Financial Education for All lecture series provides college
               students with essential financial knowledge, equipping them with
               skills in saving, investing in markets, effective money
               management, understanding market risks, and more to thrive in
@@ -24,7 +24,7 @@ export const FinanceTalk = () => {
               </span>{" "}
               "
             </p>
-            <a href="mailto:">
+            <a href="mailto:aa">
               <button className="bg-drkPurple h-12 w-44 rounded-full text-drkYellow font-mont font-bold mt-3">
                 Send Mail
               </button>

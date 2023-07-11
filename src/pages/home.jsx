@@ -8,21 +8,26 @@ import { JoinCommunity } from "../components/comm";
 import { Footer } from "../components/common/Footer";
 import tabHeroImage from "../assets/Images/HeroImage.svg";
 import desktopHero from "../assets/Images/desktopHero.svg";
-import { motion } from "framer-motion";
+import { useScroll, motion } from "framer-motion";
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
+      {/* <motion.div
+        style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
+        className=" bg-red-500 w-full h-3 fixed top-0 left-0 z-50 "
+      /> */}
+
       <Header />
       <motion.main
         className="app min-screen absolute   overflow-hidden"
-        layoutId="page"
         initial={{ y: "100%" }}
         animate={{ y: "0%" }}
         exit={{ opacity: 1, y: "100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
       >
-
         <section className="hero-section mix-bg  lg:min-h-screen ">
           <div className="wrapper p-4 flex justify-center items-center flex-col md:w-screen ">
             <div className="lg:w-[92%]  md:flex md:flex-col lg:flex-row md:justify-between  mt-16">
@@ -69,6 +74,7 @@ const Home = () => {
         </section>
 
         <Features />
+
         <MoreOffers />
         <JoinCommunity />
         <Footer />
