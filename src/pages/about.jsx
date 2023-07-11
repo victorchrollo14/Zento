@@ -17,7 +17,7 @@ const About = () => {
         animate={{ y: "0%" }}
         exit={{ opacity: 1, y: "100%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
-        className="app min-h-screen bg-lYellow overflow-hidden"
+        className="app min-h-screen bg-lYellow overflow-hidden 2xl:max-w-7xl"
       >
         <Intro />
 

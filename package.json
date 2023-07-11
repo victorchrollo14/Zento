@@ -14,16 +14,11 @@
     "flowbite": "^1.7.0",
     "flowbite-react": "^0.4.10",
     "framer-motion": "^10.12.18",
-    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.2",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.14.1",
-    "react-scroll": "^1.8.9",
-    "react-type-animation": "^3.1.0",
-    "react-typewriter": "^0.4.1",
-    "react-typing": "^1.0.0",
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
