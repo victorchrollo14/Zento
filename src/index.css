@@ -60,7 +60,7 @@ body {
   transition: all 1 ease;
 }
 
-.custom-cursor{
+.custom-cursor {
   display: none;
 }
 
@@ -145,4 +145,48 @@ body {
   100% {
     transform: translateX(-100vw, -1.25rem);
   }
+}
+
+/* shake animation */
+
+/* CSS */
+/* CSS */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  20% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  30% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  40% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  50% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  60% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  70% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  90% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+.shake-button:hover {
+  animation: shake 0.5s both;
 }

@@ -8,7 +8,11 @@ import { JoinCommunity } from "../components/comm";
 import { Footer } from "../components/common/Footer";
 import tabHeroImage from "../assets/Images/HeroImage.svg";
 import desktopHero from "../assets/Images/desktopHero.svg";
-import { Section } from "../components/animation";
+import {
+  RightSlideAnimation,
+  ScaleAnimation,
+  Section,
+} from "../components/animation";
 import { useScroll, motion } from "framer-motion";
 
 const Home = () => {
@@ -55,20 +59,24 @@ const Home = () => {
                 <div className="hero-image w-full flex justify-center mt-10 md:hidden ">
                   <MobHeroImage />
                 </div>
-                <div className="hero-tab-desktop hidden md:block lg:hidden md:w-[80vw] mt-14">
-                  <img
-                    src={tabHeroImage}
-                    alt=""
-                    className="w-[90%] md:w-full lg:w-[80%] h-auto "
-                  />
-                </div>
-                <div className="desktop-Image w-full hidden lg:block mt-16 ">
-                  <img
-                    src={desktopHero}
-                    alt="Hero Image"
-                    className="w-full h-auto"
-                  />
-                </div>
+                <ScaleAnimation>
+                  <div className="hero-tab-desktop hidden md:block lg:hidden md:w-[80vw] mt-14">
+                    <img
+                      src={tabHeroImage}
+                      alt=""
+                      className="w-[90%] md:w-full lg:w-[80%] h-auto "
+                    />
+                  </div>
+                </ScaleAnimation>
+                <RightSlideAnimation>
+                  <div className="desktop-Image w-full hidden lg:block mt-16 ">
+                    <img
+                      src={desktopHero}
+                      alt="Hero Image"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </RightSlideAnimation>
               </div>
             </div>
           </div>

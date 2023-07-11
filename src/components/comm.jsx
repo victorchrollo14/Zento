@@ -2,6 +2,7 @@ import React from "react";
 import { WhatsAppButton } from "../assets/svgs/WhatsApp";
 import { LinkedIn } from "../assets/svgs/linkedIn";
 import { Section } from "./animation";
+import { motion } from "framer-motion";
 
 export const JoinCommunity = () => {
   return (
@@ -13,10 +14,17 @@ export const JoinCommunity = () => {
             community
           </h1>
           <div className="buttons w-[90vw] flex flex-col justify-center gap-4 my-8 max-w-md ">
-            <a href="https://chat.whatsapp.com/CBCXsN0bjxYHpjTSFbvQXa">
+            <a
+              href="https://chat.whatsapp.com/CBCXsN0bjxYHpjTSFbvQXa"
+              className="shake-button"
+            >
               <WhatsAppButton />
             </a>
-            <a href="https://www.linkedin.com/company/zento.money/">
+
+            <a
+              href="https://www.linkedin.com/company/zento.money/"
+              className="shake-button"
+            >
               <LinkedIn />
             </a>
           </div>
