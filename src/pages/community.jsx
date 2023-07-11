@@ -5,6 +5,7 @@ import { JoinCommunity } from "../components/comm";
 import { Footer } from "../components/common/Footer";
 import { Header } from "../components/common/Header";
 import { motion } from "framer-motion";
+import { Section } from "../components/animation";
 
 const Community = () => {
   return (
@@ -18,7 +19,9 @@ const Community = () => {
         transition={{ duration: 0.75, ease: "easeOut" }}
       >
         <ZeroOne />
-        <FinanceTalk />
+        <Section>
+          <FinanceTalk />
+        </Section>
         <JoinCommunity />
         <Footer />
       </motion.div>

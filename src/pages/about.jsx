@@ -5,6 +5,7 @@ import TeamSection from "../components/AboutComp/Team";
 import { Footer } from "../components/common/Footer";
 import { Header } from "../components/common/Header";
 import { motion } from "framer-motion";
+import { Section } from "../components/animation";
 
 const About = () => {
   return (
@@ -19,8 +20,13 @@ const About = () => {
         className="app min-h-screen bg-lYellow overflow-hidden"
       >
         <Intro />
-        <Mission />
-        <TeamSection />
+
+        <Section>
+          <Mission />
+        </Section>
+        <Section>
+          <TeamSection />
+        </Section>
         <Footer />
       </motion.main>
     </>

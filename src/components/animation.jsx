@@ -12,7 +12,7 @@ export function Section({ children }) {
           controls.start({ opacity: 1 });
         }
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.3 } // Adjust the threshold as needed
     );
 
     if (ref.current) {
