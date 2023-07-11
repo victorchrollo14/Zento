@@ -8,6 +8,7 @@ import { JoinCommunity } from "../components/comm";
 import { Footer } from "../components/common/Footer";
 import tabHeroImage from "../assets/Images/HeroImage.svg";
 import desktopHero from "../assets/Images/desktopHero.svg";
+import { Section } from "../components/animation";
 import { useScroll, motion } from "framer-motion";
 
 const Home = () => {
@@ -72,9 +73,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         <Features />
-
         <MoreOffers />
         <JoinCommunity />
         <Footer />

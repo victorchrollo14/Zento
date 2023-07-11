@@ -1,6 +1,7 @@
 import React from "react";
 import { featuresData } from "./data";
 import { Form } from "./form";
+import { Section } from "./animation";
 
 export const Features = () => {
   return (
@@ -16,14 +17,16 @@ export const Features = () => {
       </header>
       <ul className="features ">
         <ListItems />
-        <li className="cta flex justify-center  bg-drkPurple text-white rounded-xl py-12  lg:rounded-full md:py-16 lg:py-24">
-          <div className="w-3/4 flex gap-3 items-center justify-center flex-col">
-            <h1 className="capitalize font-mont font-bold normal-header-clamp  text-center md:max-w-lg lg:max-w-4xl leading-tight">
-              Join The WaitList to get updates On The Product{" "}
-            </h1>
-            <Form />
-          </div>
-        </li>
+        <Section>
+          <li className="cta flex justify-center  bg-drkPurple text-white rounded-xl py-12  lg:rounded-full md:py-16 lg:py-24">
+            <div className="w-3/4 flex gap-3 items-center justify-center flex-col">
+              <h1 className="capitalize font-mont font-bold normal-header-clamp  text-center md:max-w-lg lg:max-w-4xl leading-tight">
+                Join The WaitList to get updates On The Product{" "}
+              </h1>
+              <Form />
+            </div>
+          </li>
+        </Section>
       </ul>
     </section>
   );
@@ -46,7 +49,12 @@ const ListItems = () => {
           className={` my-5 ${bgColor} ${textColor} py-5 sm:py-0  rounded-xl w-full flex justify-center items-center md:h-[500px] xl:h-[650px]`}
         >
           <div className={classList}>
-            <div className={`feat-content  w-[90%] max-w-md md:w-1/2 ${idName !== "Scan-Feat" || "lg:-translate-y-10 xl:-translate-y-16"}`}>
+            <div
+              className={`feat-content  w-[90%] max-w-md md:w-1/2 ${
+                idName !== "Scan-Feat" ||
+                "lg:-translate-y-10 xl:-translate-y-16"
+              }`}
+            >
               <h1 className="uppercase font-mont font-bold text-[28px] cap-header mb-3">
                 {title}
               </h1>
