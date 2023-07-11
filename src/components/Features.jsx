@@ -1,43 +1,43 @@
 import React from "react";
 import { featuresData } from "./data";
 import { Form } from "./form";
-import { Section } from "./animation";
+import { Section, AnimateHeader, AnimateSub } from "./animation";
 import { delay, motion } from "framer-motion";
 
 export const Features = () => {
   return (
     <section className="features-section my-16 mx-4  md:my-12 lg:mx-12">
       <header className="mt-32">
-        <motion.h1
-          initial={{ translateY: "100px", opacity: 0 }}
-          whileInView={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeIn" }}
-          className="uppercase font-mont font-bold text-[28px] text-center cap-header "
-        >
-          our features
-        </motion.h1>
-        <motion.h3
-          initial={{ translateY: "100px", opacity: 0 }}
-          whileInView={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.3 }}
-          className="font-mont text-center text-base "
-        >
-          Unlock a World of Possibilities with <br />
-          our Powerful Features
-        </motion.h3>
+        <AnimateHeader key="Features Header">
+          <h1 className="uppercase font-mont font-bold text-[28px] text-center cap-header ">
+            our features
+          </h1>
+        </AnimateHeader>
+        <AnimateSub>
+          <h3 className="font-mont text-center text-base ">
+            Unlock a World of Possibilities with <br />
+            our Powerful Features
+          </h3>
+        </AnimateSub>
       </header>
       <ul className="features ">
         <ListItems />
-        <Section>
-          <li className="cta flex justify-center  bg-drkPurple text-white rounded-xl py-12  lg:rounded-full md:py-16 lg:py-24">
-            <div className="w-3/4 flex gap-3 items-center justify-center flex-col">
+
+        <li
+          key={crypto.randomUUID()}
+          className="cta flex justify-center  bg-drkPurple text-white rounded-xl py-12  lg:rounded-full md:py-16 lg:py-24"
+        >
+          <div className="w-3/4 flex gap-3 items-center justify-center flex-col">
+            <AnimateHeader>
               <h1 className="capitalize font-mont font-bold normal-header-clamp  text-center md:max-w-lg lg:max-w-4xl leading-tight">
                 Join The WaitList to get updates On The Product{" "}
               </h1>
+            </AnimateHeader>
+            <AnimateSub>
               <Form />
-            </div>
-          </li>
-        </Section>
+            </AnimateSub>
+          </div>
+        </li>
       </ul>
     </section>
   );
@@ -45,13 +45,13 @@ export const Features = () => {
 
 const ListItems = () => {
   let id = 0;
-  let translateText = "-30px";
-  let translateImg = "60px";
-
 
   let items = featuresData.map(
     ({ idName, title, subtitle, content, bgColor, textColor, image }) => {
       id++;
+      let translateText = "-30px";
+      let translateImg = "60px";
+
       let classList = `list-inside-wrapper py-[10%] md:py-10 sm:w-4/5 flex flex-col gap-7 items-center md:flex-row  justify-between  lg:mx-16 xl:max-w-[1000px]`;
       if (id % 2 == 0) {
         classList = `list-inside-wrapper py-[10%] md:py-10 sm:w-4/5 flex flex-col gap-7 items-center md:flex-row-reverse  justify-between  lg:mx-16 xl:max-w-[1000px]`;

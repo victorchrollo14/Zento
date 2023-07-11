@@ -18,7 +18,7 @@ const Meme = () => {
         <section className="meme-section   bg-light-green text-drkPurple">
           <div className="content flex flex-col gap-4 justify-center items-center mt-24 py-10">
             <h1 className="uppercase font-mont  font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-5 drop-shadow-2xl ">
-              Coming Soon
+              Woh coming soon !!!!
             </h1>
             <img
               src={meme}
