@@ -6,7 +6,6 @@ import ZeroOneHeader from "../../assets/Images/zeroOne.svg"
 export const ZeroOne = () => {
   return (
     <>
-      <Header />
       <section className="zero-one bg-drkBlue lg:h-screen ">
         <div className="Zero-one-wrap flex flex-col items-center lg:items-start lg:justify-between mt-16 py-10 lg:flex-row-reverse lg:mx-16">
           <div className="image-section md:w-3/4 lg:w-1/2">

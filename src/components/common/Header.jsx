@@ -35,7 +35,9 @@ export const Header = () => {
 
   return (
     <div
-      className={`header-container header  z-10 w-full flex justify-center fixed top-5 slide-bottom`}
+      className={`header-container header  z-10 w-full flex justify-center ${
+        isFixed ? "fixed top-5 slide-bottom" : ""
+      } `}
     >
       <Navbar
         fluid
