@@ -2,7 +2,7 @@ import React from "react";
 import person1 from "../../assets/Images/ceo.jpeg";
 import person2 from "../../assets/Images/cto.jpg";
 import person3 from "../../assets/Images/cmo.png";
-import person4 from "../../assets/Images/person1.png";
+import person4 from "../../assets/Images/victor.png";
 
 const TeamSection = () => {
   const teamMembers = [
@@ -32,11 +32,11 @@ const TeamSection = () => {
     },
     {
       name: "Bangalore",
-      position: "dev",
+      position: "Developer",
       image: person4,
-      twitter: "",
+      twitter: "https://twitter.com/chrollo1402",
       mail: "mailto:Victor20030214@gmail.com",
-      linkedIn: "",
+      linkedIn: "https://www.linkedin.com/in/victor-immanuel-81363a216/",
     },
   ];
 

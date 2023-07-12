@@ -2,7 +2,15 @@ import React from "react";
 
 export const Form = () => {
   return (
-    <form action="" className=" mt-5 py-px w-full max-w-[458px]">
+    <form
+      action=""
+      className=" mt-5 py-px w-full max-w-[458px]"
+      onSubmit={(e) => {
+        e.preventDefault();
+        window.location.href =
+          "https://chat.whatsapp.com/CBCXsN0bjxYHpjTSFbvQXa";
+      }}
+    >
       <input
         type="email"
         placeholder="enter your email"

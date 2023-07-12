@@ -25,7 +25,7 @@ export const HeroContent = () => {
 
       <h3 className="font-normal text-left  font-mont mt-4 2xl:text-2xl 2xl:max-w-lg max-w-sm md:text-center lg:text-left">
         <span className="text-drkYellow font-bold ">
-          The Gen-Z Banking App.
+          The Gen-Z Banking App 🚀.
         </span>{" "}
         <br />
         Subscribe to our newsletter to get stay in loop with latest content

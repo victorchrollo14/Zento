@@ -90,7 +90,7 @@ export const Footer = () => {
               <h3 className="text-2xl font-bold mb-2 font-mont">Contact</h3>
               <div className="font-mont text-base ">
                 <a
-                  href="mailto:"
+                  href="mailto:contact@zento.money"
                   className={`flex gap-2 mail hover:text-light-green hover:scale-105 transition-transform duration-100 ease-linear`}
                 >
                   {" "}

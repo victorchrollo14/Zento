@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../common/Header";
 import { NewsLetterImage } from "../../assets/svgs/ZeroOneImage";
-import ZeroOneHeader from "../../assets/Images/zeroOne.svg"
+import ZeroOneHeader from "../../assets/Images/zeroOne.svg";
 
 export const ZeroOne = () => {
   return (
@@ -15,12 +15,18 @@ export const ZeroOne = () => {
           <div className="text-content lg:1/2 flex flex-col items-center lg:translate-y-20 xl:translate-y-32 px-4 lg:items-start">
             <img src={ZeroOneHeader} alt="zero one header" />
             <h3 className="font-mont text-base text-white w-[90%] max-w-md md:text-lg md:max-w-lg text-center lg:text-left mt-3 ">
-              A Finance newsletter from <span>ZENTO</span>. <br />Subscribe to our
-              newsletter and follow us LinkedIn to quality content on Finance.{" "}
+              A Finance newsletter from <span>ZENTO</span>. <br />
+              Subscribe to our newsletter and follow us LinkedIn to quality
+              content on Finance.{" "}
             </h3>
             <form
               action=""
               className="mt-5 py-1 px-4 w-full max-w-[458px] flex flex-col lg:p-0"
+              onSubmit={(e) => {
+                e.preventDefault();
+                window.location.href =
+                  "https://chat.whatsapp.com/CBCXsN0bjxYHpjTSFbvQXa";
+              }}
             >
               <input
                 type="email"
