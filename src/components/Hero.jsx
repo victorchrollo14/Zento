@@ -12,16 +12,13 @@ export const HeroContent = () => {
               'For the <span class="text-light-green">Gen-Z.</span> <br />'
             )
             .typeString('By the <span class="text-light-green">Gen-Z.</span>')
-            .pauseFor(1000)
-            .start()
-            .deleteAll();
+            .start();
         }}
         options={{
           wrapperClassName:
             "font-black font-mont text-black text-6xl 2xl:text-6xl text-left hero-header md:text-center lg:leading-none lg:text-left",
           cursorClassName: "custom-cursor", // Add CSS class for customizing the cursor if needed
-          loop: true,
-          delay: 15,
+          delay: 10,
           deleteSpeed: 20,
         }}
       />
