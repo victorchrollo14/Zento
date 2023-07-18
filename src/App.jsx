@@ -7,14 +7,13 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import { AnimatePresence, LayoutGroup } from "framer-motion";
-import { inject } from "@vercel/analytics";
+import { Analytics } from "@vercel/analytics/react";
 
 import About from "./pages/about";
 import Home from "./pages/home";
 import Community from "./pages/community";
 import Meme from "./pages/meme";
 
-inject();
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,6 +31,7 @@ const App = () => {
     <AnimatePresence mode="wait" initial="false">
       <LayoutGroup>
         <RouterProvider router={router} />
+        <Analytics />
       </LayoutGroup>
     </AnimatePresence>
   );
